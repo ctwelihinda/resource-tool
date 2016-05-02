@@ -1,0 +1,214 @@
+<schema name="moe_stans.resourcerecord">
+<comment>This schema defines the tables needed to store resources and their recommendations, as well as tags, and tag types.</comment>
+<comment> Version 2016/01/04: clobs changed to varchar(max) in order to migrate from oracle to SQLServer - Chamath </comment>
+<comment>Update: changed timestamp variable to datetime2(7) - Chamath</comment>
+
+  <table name="moe_resource">
+    <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary key for the table" />
+    <column name="entry_id" data-type="varchar(8)" nullable="false" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who created the resource" />
+    <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="updated_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="go_live_date" data-type="datetime" nullable="true" identity="false" comment="When this resource was made live" />
+    <column name="parent_id" data-type="int" nullable="true" identity="false" comment="Recursive relation" />
+    <column name="recommendation" data-type="int" nullable="true" identity="false" comment="The final recommendation status (0 or null for not live, 1 for live, 2 for approved but not yet live)" />
+    <column name="out_of_print" data-type="int" nullable="true" identity="false" comment="Whether or not it's out of print (0 or null for no, 1 for yes)" />
+    <column name="dont_show_if_child" data-type="int" nullable="true" identity="false" comment="Whether or not to list this resource on its own if it has a parent record (since it will also be listed under the parent). Made it dont_show since it was added later on, and most records will have null value." />
+    <column name="is_core" data-type="int" nullable="true" identity="false" comment="0/null = additional, 1 = core, 2 = support" />
+    <column name="is_rover" data-type="int" nullable="true" identity="false" comment="Whether or not this resource is a ROVER video." />
+    
+    <column name="title" data-type="varchar(256)" nullable="true" identity="false" comment="" />
+    <column name="subtitle" data-type="varchar(256)" nullable="true" identity="false" comment="" />
+    <column name="edition" data-type="varchar(256)" nullable="true" identity="false" comment="" />
+    
+    <column name="quick_title" data-type="varchar(256)" nullable="true" identity="false" comment="NOTE: OBSOLETE - USE title INSTEAD. All of the quick_* columns are used for faster queries and display of previews/summaries. When a DB-wide search is performed, we can just query these columns and not have to do intensive joins and multiple queries over other tables." />
+    <column name="quick_description" data-type="varchar(512)" nullable="true" identity="false" comment="See the comments for quick_title." />
+    <column name="quick_info" data-type="varchar(256)" nullable="true" identity="false" comment="See the comments for quick_title. Not exactly sure what the format of this column will be yet, but we can use it for other pertinent info about the resource." />
+    <column name="quick_pic" data-type="varchar(256)" nullable="true" identity="false" comment="See the comments for quick_title. Can be used to hold the image path." />
+    
+    <primary-key name="moe_resource_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_resource_ui1" unique="true">
+        <columnref name="entry_id"/>
+    </index>
+
+    <index name="moe_resource_ui2" unique="false">
+        <columnref name="quick_title"/>
+    </index>
+  </table>
+
+
+
+  <table name="moe_recommendation">
+    <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary key for the table" />
+    <column name="created_by" data-type="int" nullable="false" identity="false" comment="The pk1 of the BB user who created the recommendation" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+    <column name="resource_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the resource" />
+    <column name="recommended" data-type="int" nullable="true" identity="false" comment="Whether or not it was recommended (used int in case other possible values/situations arise)" />
+    <column name="comments" data-type="varchar(1024)" nullable="true" identity="false" comment="Comments about the users decision" />
+    
+    <primary-key name="moe_recommendation_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+
+  
+      
+  <table name="moe_tag">
+    <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary key for the table" />
+    <column name="value" data-type="varchar(512)" nullable="false" identity="false" />    
+    <column name="tagtype_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the associated tagtype" />
+    <column name="parent_id" data-type="int" nullable="true" identity="false" comment="Not currently used. Note that this is a different parent than the one referenced by the parent_id column in the moe_resource_tag table." />
+    <column name="information_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the associated tag_information row" />
+
+    <primary-key name="moe_tag_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_tag_ui1" unique="false">
+        <columnref name="value"/>
+    </index>
+
+    <index name="moe_tag_ui2" unique="false">
+        <columnref name="tagtype_id"/>
+    </index>
+  </table>
+  
+  <table name="moe_tagtype">
+    <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary key for the table" />
+    <column name="type" data-type="varchar(1024)" nullable="false" identity="false" comment="" />
+    <column name="description" data-type="varchar(max)" nullable="true" identity="false" comment="" />
+
+    <primary-key name="moe_tagtype_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_tagtype_ui1" unique="true">
+        <columnref name="type"/>
+    </index>
+  </table>
+
+
+  <table name="moe_resource_tag" comment="Join table for resources and tags">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="false" identity="false" comment="The pk1 of the BB user who associated the resource and the tag" />
+    <column name="resource_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the resource" />
+    <column name="tag_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the tag" />
+    <column name="parent_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the parent tag, if there is one (can be null). Note that the parent will also have its own moe_resource_tag row to link it directly to the resource" />
+
+    <primary-key name="moe_resource_tag_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_resource_tag_ui1" unique="false">
+        <columnref name="tag_id"/>
+    </index>
+
+    <index name="moe_resource_tag_ui2" unique="false">
+        <columnref name="resource_id"/>
+    </index>
+  </table>
+
+  <table name="moe_recommendation_tag" comment="Join table for tags and recommendations. Not currently used">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="false" identity="false" comment="The pk1 of the BB user who associated the tag and the recommendation" />
+    <column name="recommendation_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the recommendation" />
+    <column name="tag_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the tag" />
+
+    <primary-key name="moe_recommendation_tag_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+
+
+  <table name="moe_tag_information" comment="Info for tags such as publisher addresses, etc.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="information" data-type="varchar(max)" nullable="true" identity="false" comment="The info" />
+
+    <primary-key name="moe_tag_information_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+
+
+  <table name="moe_resource_text" comment="Table for annotations, notes, comments, etc. Anything that would require a CLOB column, basically.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="false" identity="false" comment="The pk1 of the BB user who wrote it" />
+    <column name="resource_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the resource" />
+    <column name="type" data-type="varchar(256)" nullable="true" identity="false" comment="Type of info (annotation, note, comments, etc.)" />
+    <column name="text" data-type="varchar(max)" nullable="true" identity="false" comment="The info" />
+
+    <primary-key name="moe_resource_text_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+
+
+  <table name="moe_rnumber_incrementer" comment="Keeps track of the R Numbers">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="next_number" data-type="int" />
+
+    <primary-key name="moe_rnumber_incrementer_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+
+
+
+  <table name="moe_resource_flag" comment="Allows users to flag a resource for follow-up. Not part of the permanent resource record; just for taggers to stay organized.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="resource_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the resource" />
+    <column name="user_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the BB user who flagged it" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+    <column name="reason_code" data-type="int" nullable="true" identity="false" comment="Integer representing the reason for flagging. Not sure yet if this will be used or what the reason codes will be, but best to add it now anyway." />
+    <column name="comments" data-type="varchar(max)" nullable="true" identity="false" comment="Optional comments field" />
+
+    <primary-key name="moe_resource_flag_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+        
+
+  <table name="moe_cached_list" comment="For faster loading times, pk1s returned by common queries will be cached.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="pk1_list" data-type="varchar(max)" nullable="true" identity="false" comment="Comma-separated list of pk1s" />
+    <column name="query_name" data-type="varchar(256)" nullable="true" identity="false" comment="An identifier for the query" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+
+    <primary-key name="moe_cached_list_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+  </table>
+
+
+
+  <table name="moe_resource_resource" comment="Table for resource self-joins. Implemented for the Selection-Source type specifically, but could have a more general use.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who associated the resources" />
+    <column name="resource_1_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the first resource" />
+    <column name="resource_2_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the second resource" />
+    <column name="resource_1_type" data-type="varchar(256)" nullable="true" identity="false" comment="The type of the first resource" />
+    <column name="resource_2_type" data-type="varchar(256)" nullable="true" identity="false" comment="The type of the second resource" />
+
+    <primary-key name="moe_resource_resource_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_resource_resource_ui1" unique="false">
+        <columnref name="resource_1_id"/>
+    </index>
+    <index name="moe_resource_resource_ui2" unique="false">
+        <columnref name="resource_2_id"/>
+    </index>
+  </table>
+
+
+
+</schema>
+

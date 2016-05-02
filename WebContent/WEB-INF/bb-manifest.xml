@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <plugin>
+
+        <name value="STaNS Resource Tool"/>
+        <handle value="resource_tool_final"/>
+        <description value="Tool for creating and editing resource records. Hopefully the final version."/>
+        <version value = "2013.11.07" />
+
+        <requires>
+          <bbversion value="9.1"/>
+        </requires>
+
+        <vendor>
+            <id value="moe"/>
+            <name value="Ministry of Education"/>
+            <url value="https://bblearndev.merlin.mb.ca/"/>
+            <description value="The Ministry of Education is responsible for K-12 education in Saskatchewan"/>
+        </vendor>
+
+        <http-actions>
+              <config value="index.jsp"/>
+              <remove value=""/>
+        </http-actions>
+
+        <application-defs>
+            <application handle="resource_tool_final" type="system" name="B2 Example Using Servlets">
+                <description lang="en_US">Tool for creating and editing resource records.</description>
+                <links>
+                    <link>
+                        <type value="tool"/>
+                        <name value="resource_tool"/>
+                        <url value="quick_search_dashboard.jsp" />
+                        <description />
+                    </link>
+                </links>
+            </application>
+        </application-defs>
+
+        <module-defs>
+            <module-type ext-ref="resource_list_module" title="STaNS Resource List" uicreatable="true">
+                <jsp-dir></jsp-dir>
+                <jsp>
+                    <view>resource_list_module.jsp</view>
+                    <admin>admin.jsp</admin>
+                    <edit>edit.jsp</edit>
+                </jsp>
+            </module-type>
+        </module-defs>
+        
+	<!-- the folder under WEB-INF/schema folder where schema.xml file is located. That file defines a database table used by this application 
+        <schema-dirs>
+            <schema-dir dir-name="resource_tool" />
+        </schema-dirs>
+        -->
+	<permissions>
+            <permission type="java.net.SocketPermission" name="*" actions="connect,resolve"/>
+            <permission type="java.util.PropertyPermission" name="*" actions="read,write"/>
+            <permission type="attribute" name="user.personalinfo" actions="get" />
+            <permission type="attribute" name="user.authinfo" actions="get" />
+            <permission type="attribute" name="Group" actions="get"/>
+            <permission type="attribute" name="GroupMembership" actions="get"/>
+	</permissions>
+  </plugin>
+</manifest>

@@ -1,0 +1,63 @@
+/* 
+    Document   : test_styles
+    Created on : 3-Apr-2014, 8:43:43 AM
+    Author     : peter
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+p {
+    display: inline;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.test {
+    margin: 25px 50px 25px 50px;
+}
+
+.title {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0px auto 45px auto;
+}
+
+.question_block {
+    margin: 5px 0px 15px 0px;
+}
+
+span.question_text {
+    
+}
+span.question_number {
+    
+}
+
+.shortanswer_lines {
+    display: block;
+    margin-top: 35px;
+}
+
+.tf_answer, .mc_answser {
+    padding: 5px;
+    max-height: 25px;
+}
+div.checkbox {
+    float: left;
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+.option_text {
+    margin-top: 4px;
+}
+

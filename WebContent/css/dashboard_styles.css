@@ -1,0 +1,132 @@
+/* 
+    Document   : dashboard_styles
+    Created on : 24-Apr-2014, 10:00:46 AM
+    Author     : peter
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+#contentPanel{
+    min-height: 800px;
+}
+
+select{
+    min-width:150px;
+    padding: 3px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.select-header {
+    font-weight: bold;
+}
+
+.search_section {
+    float: left;
+    margin: 15px;
+}
+
+.inventory{
+    border: solid thin black;
+}
+.genericButton{
+    margin-bottom:2px;
+}
+a.csstooltip {
+    position: relative;
+    display: inline;
+}
+a.csstooltip span {
+    position: absolute;
+    width:600px;
+    color: #000000;
+    background: #EDEDED;
+    border: 2px solid #000000;
+    /*height: 100px;*/
+    line-height: 15px;
+    padding: 10px; 
+    text-align: left;
+    visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #999999;
+}
+a:hover.csstooltip span {
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+    top: 50%;
+    margin-top: -22px;
+    margin-left: 15px;
+    z-index: 500;
+}
+
+/* FILTERS */
+#search_filters {
+    border: 1px solid #000;
+    width: 20%;
+    padding: 20px;
+    background: #EEE;
+}
+#search_forms {
+    padding: 20px;
+    border: solid 1px black;
+    background-color: #EEE;
+}
+.filter {
+    display:inline-block;
+    font-weight:normal;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.filter_header {
+    font-weight: bold;
+    margin-top: 5px;
+}
+.filter_list {
+    
+}
+
+/* RESULTS */
+#search_results {
+    width: 75%;
+    float: right;
+}
+.result_annotation_field {
+    max-width: 600px;
+}
+.result_title_field {
+    min-width: 100px;
+    max-width: 150px;
+}
+.result_medium_field {
+}
+.result_link_field a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #006837;
+}
+.result_link_field a:hover {
+    cursor: pointer;
+    color: #CCE1D7;    
+}
+.result_nolink_field {
+    font-style: italic;
+    color: #AAA;
+}
+
+.result_children {
+    margin: 5px 0px 0px 5px;
+    padding: 0px 0px 0px 5px;
+    border-left: 1px solid #CCC;
+    font-weight: bold;
+    color: #777;
+}
+
+.open_popup {
+    font-weight: bold;
+}
+.open_popup:hover {
+    cursor: pointer;
+    color: #006837;
+}
+

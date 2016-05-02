@@ -1,0 +1,68 @@
+/* 
+    Document   : module_styles
+    Created on : 31-Jul-2014, 9:27:03 AM
+    Author     : peter
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#module_introduction {
+    margin: 15px 0px 15px 0px;
+    padding: 15px;
+    border: 1px solid #DDD;
+}
+#module_intro_title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#module_intro_blurb {
+    
+}
+#module_intro_parameters {
+    font-size: 0.85em;
+    color: #666;
+}
+.parameter_list_type {
+    font-style: italic;
+}
+.parameter_list_value {
+    font-weight: bold;
+}
+
+#module_search_results {
+}
+
+.module_result {
+    margin: 15px 0px 15px 0px;
+    border-top: 1px solid #DDD;
+}
+.module_result_top {
+    margin-bottom: 7px;
+}
+.module_result_middle {
+    margin: 0px 10px 0px 10px;
+    text-align: justify;
+}
+.module_result_bottom {
+    margin: 10px;
+}
+.module_result_title_field {
+}
+.module_result_medium_field {
+    float: right;
+    color: #777;
+}
+.module_result_link_field a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #006837;
+}
+.module_result_link_field a:hover {
+    cursor: pointer;
+    color: #CCE1D7;
+}
+.module_result_nolink_field {
+    font-style: italic;
+    color: #AAA;
+}
+

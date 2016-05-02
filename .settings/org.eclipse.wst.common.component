@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Resources">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes/" source-path="/ImportedClasses"/>
+        <dependent-module archiveName="cron4j.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/cron4j/cron4j">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-1.3.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-io-1.3.1/commons-io-1.3.1">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="org-apache-commons-codec.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/org-apache-commons-codec/org-apache-commons-codec">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec-1.10.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-codec-1.10/commons-codec-1.10">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Resources"/>
+        <property name="java-output-path" value="/Resources/build/classes"/>
+    </wb-module>
+</project-modules>

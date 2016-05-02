@@ -1,0 +1,3443 @@
+<subjects>
+    <subject name="arts_education">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_1.xml</out_ind>
+                    <teaching>artseducation1teaching.htm</teaching>
+                    <aimsgoals>artseducation1-5aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 1</res_class_id>
+                <curric_name>Arts Education 1</curric_name>
+        	<banner>arts/AE1.png</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181754_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_2.xml</out_ind>
+                    <teaching>artseducation2teaching.htm</teaching>
+                    <aimsgoals>artseducation1-5aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 2</res_class_id>
+                <curric_name>Arts Education 2</curric_name>
+        	<banner>arts/AE2.png</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181755_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_3.xml</out_ind>
+                    <teaching>artseducation3teaching.htm</teaching>
+                    <aimsgoals>artseducation1-5aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 3</res_class_id>
+                <curric_name>Arts Education 3</curric_name>
+        	<banner>arts/AE3.png</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181756_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_4.xml</out_ind>
+                    <teaching>artseducation4teaching.htm</teaching>
+                    <aimsgoals>artseducation1-5aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 4</res_class_id>
+                <curric_name>Arts Education 4</curric_name>
+        	<banner>arts/AE4.png</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181757_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_5.xml</out_ind>
+                    <teaching>artseducation5teaching.htm</teaching>
+                    <aimsgoals>artseducation1-5aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 5</res_class_id>
+                <curric_name>Arts Education 5</curric_name>
+        	<banner>arts/AE5.png</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181758_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_6.xml</out_ind>
+                    <teaching>artseducation6teaching.htm</teaching>
+                    <aimsgoals>artseducation6aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 6</res_class_id>
+                <curric_name>Arts Education 6</curric_name>
+        	<banner>arts/artseducation6.gif</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181759_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_7.xml</out_ind>
+                    <teaching>artseducation7teaching.htm</teaching>
+                    <aimsgoals>artseducation7-9aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 7</res_class_id>
+                <curric_name>Arts Education 7</curric_name>
+        	<banner>arts/artseducation7.gif</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181760_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_8.xml</out_ind>
+                    <teaching>artseducation8teaching.htm</teaching>
+                    <aimsgoals>artseducation7-9aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 8</res_class_id>
+                <curric_name>Arts Education 8</curric_name>
+        	<banner>arts/artseducation8.gif</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181761_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_9.xml</out_ind>
+                    <teaching>artseducation9teaching.htm</teaching>
+                    <aimsgoals>artseducation7-9aimsgoals.htm</aimsgoals>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 9</res_class_id>
+                <curric_name>Arts Education 9</curric_name>
+        	<banner>arts/artseducation9.gif</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181762_1</doc_dl>
+            </level>
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>arts_education_k.xml</out_ind>
+                    <aimsgoals>arts_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>arts education k</res_class_id>
+                <res_class_entry>arts_education</res_class_entry>
+                <curric_name>Arts Education K</curric_name>
+        	<banner>arts/AEK.png</banner>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>
+            <level id="102030">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <lexique>arts_ed_lex.xml</lexique>
+                </tabs>
+                <res_class_id>arts education 10 20 30</res_class_id>
+                <res_class_entry>arts_education</res_class_entry>
+                <curric_name>Arts Education 10, 20, 30</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181753_1</doc_dl>
+            </level>
+            <level id="visual102030">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>visual art 10 20 30</res_class_id>
+                <res_class_entry>arts_education</res_class_entry>
+                <curric_name>Visual Art 10, 20, 30</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181767_1</doc_dl>
+            </level>
+	    <level id="drama102030">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>drama 10 20 30</res_class_id>
+                <res_class_entry>arts_education</res_class_entry>
+                <curric_name>Drama 10, 20, 30</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181766_1</doc_dl>
+            </level>
+            <level id="jazz10">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>jazz_10.xml</out_ind>
+                    <aimsgoals>jazzaimsgoals.htm</aimsgoals>
+                    <teaching>jazzteaching.htm</teaching>
+                    <lexique>jazz_102030_lex.xml</lexique>
+                </tabs>
+                <res_class_id>instrumental jazz 10</res_class_id>
+                <curric_name>Instrumental Jazz 10</curric_name>
+                <banner>arts/Jazz_10.png</banner>
+                <dark_colour>#0066FF</dark_colour>
+                <light_colour>#D1E0FF</light_colour>
+                <doc_dl>xid-200056_1</doc_dl>
+            </level>
+            <level id="jazz20">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>jazz_20.xml</out_ind>
+                    <aimsgoals>jazzaimsgoals.htm</aimsgoals>
+                    <teaching>jazzteaching.htm</teaching>
+                    <lexique>jazz_102030_lex.xml</lexique>
+                </tabs>
+                <res_class_id>instrumental jazz 20</res_class_id>
+                <curric_name>Instrumental Jazz 20</curric_name>
+                <banner>arts/Jazz_20.png</banner>
+                <dark_colour>#0066FF</dark_colour>
+                <light_colour>#D1E0FF</light_colour>
+                <doc_dl>xid-200057_1</doc_dl>
+            </level>
+            <level id="jazz30">
+                <dir_path>/library/Curriculum Website/Arts Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>jazz_30.xml</out_ind>
+                    <aimsgoals>jazzaimsgoals.htm</aimsgoals>
+                    <teaching>jazzteaching.htm</teaching>
+                    <lexique>jazz_102030_lex.xml</lexique>
+                </tabs>
+                <res_class_id>instrumental jazz 30</res_class_id>
+                <curric_name>Instrumental Jazz 30</curric_name>
+                <banner>arts/Jazz_30.png</banner>
+                <dark_colour>#0066FF</dark_colour>
+                <light_colour>#D1E0FF</light_colour>
+                <doc_dl>xid-200058_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="english_language_arts">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_1.xml</out_ind>
+                    <teaching>englishlanguagearts1teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts1-5aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 1</res_class_id>
+                <curric_name>English Language Arts 1</curric_name>
+        	<banner>english/ELA1.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181775_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_2.xml</out_ind>
+                    <teaching>englishlanguagearts2teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts1-5aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 2</res_class_id>
+                <curric_name>English Language Arts 2</curric_name>
+        	<banner>english/ELA2.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181777_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_3.xml</out_ind>
+                    <teaching>englishlanguagearts3teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts1-5aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 3</res_class_id>
+                <curric_name>English Language Arts 3</curric_name>
+        	<banner>english/ELA3.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181779_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_4.xml</out_ind>
+                    <teaching>englishlanguagearts4teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts1-5aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 4</res_class_id>
+                <curric_name>English Language Arts 4</curric_name>
+        	<banner>english/ELA4.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181780_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_5.xml</out_ind>
+                    <teaching>englishlanguagearts5teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts1-5aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 5</res_class_id>
+                <curric_name>English Language Arts 5</curric_name>
+        	<banner>english/ELA5.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181782_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_6.xml</out_ind>
+                    <teaching>englishlanguagearts6teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts6-9aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 6</res_class_id>
+                <curric_name>English Language Arts 6</curric_name>
+        	<banner>english/ELA6.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181783_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_7.xml</out_ind>
+                    <teaching>englishlanguagearts7teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts6-9aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 7</res_class_id>
+                <curric_name>English Language Arts 7</curric_name>
+        	<banner>english/ELA7.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181784_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_8.xml</out_ind>
+                    <teaching>englishlanguagearts8teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts6-9aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 8</res_class_id>
+                <curric_name>English Language Arts 8</curric_name>
+        	<banner>english/ELA8.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181785_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_9.xml</out_ind>
+                    <teaching>englishlanguagearts9teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts6-9aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 9</res_class_id>
+                <curric_name>English Language Arts 9</curric_name>
+        	<banner>english/ELA9.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181786_1</doc_dl>
+            </level>
+            <level id="k">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_k.xml</out_ind>
+                    <aimsgoals>ela_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>english language arts k</res_class_id>
+                <res_class_entry>ela</res_class_entry>
+                <curric_name>English Language Arts K</curric_name>
+        	<banner>english/ELAk.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>
+            <level id="A10">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_A10.xml</out_ind>
+                    <teaching>englishlanguagearts10teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts10aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts a10</res_class_id>
+                <curric_name>English Language Arts A10</curric_name>
+        	<banner>english/ELAA10_flat.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181774_1</doc_dl>
+            </level>
+            <level id="B10">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_B10.xml</out_ind>
+                    <teaching>englishlanguagearts10teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts10aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts b10</res_class_id>
+                <curric_name>English Language Arts B10</curric_name>
+        	<banner>english/ELAB10_flat.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181774_1</doc_dl>
+            </level>
+            <level id="20">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_20.xml</out_ind>
+                    <teaching>englishlanguagearts20teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts2030aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 20</res_class_id>
+                <curric_name>English Language Arts 20</curric_name>
+        	<banner>english/ELA_20.png</banner>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-199214_1</doc_dl>
+            </level>
+            <level id="30">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>english_language_arts_30.xml</out_ind>
+                    <teaching>englishlanguagearts30teaching.htm</teaching>
+                    <aimsgoals>englishlanguagearts2030aimsgoals.htm</aimsgoals>
+                    <lexique>englishlanguagearts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>english language arts 30</res_class_id>
+                <curric_name>English Language Arts 30</curric_name>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-786181_1</doc_dl>
+            </level>
+	    <level id="creativewriting20">
+                <dir_path>/library/Curriculum Website/English Language Arts/Curricula/</dir_path>
+                <res_class_id>creative writing 20</res_class_id>
+                <curric_name>Creative Writing 20</curric_name>
+                <dark_colour>#5493ad</dark_colour>
+                <light_colour>#dde9ef</light_colour>
+                <doc_dl>xid-181773_1</doc_dl>
+            </level>
+	  
+        </levels>
+    </subject>
+    <subject name="health_education">
+        <levels>
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_k.xml</out_ind>
+                    <aimsgoals>health_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>health education k</res_class_id>
+                <res_class_entry>health_education</res_class_entry>
+                <curric_name>Health Education K</curric_name>
+                <banner>health/HEK.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_1.xml</out_ind>
+                    <teaching>healtheducation1teaching.htm</teaching>
+                    <aimsgoals>healtheducation1aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_1.xml</lexique>
+                </tabs>
+                <res_class_id>health education 1</res_class_id>
+                <curric_name>Health Education 1</curric_name>
+                <banner>health/HE1.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181694_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_2.xml</out_ind>
+                    <teaching>healtheducation2teaching.htm</teaching>
+                    <aimsgoals>healtheducation2aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_2.xml</lexique>
+                </tabs>
+                <res_class_id>health education 2</res_class_id>
+                <curric_name>Health Education 2</curric_name>
+                <banner>health/HE2.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181695_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_3.xml</out_ind>
+                    <teaching>healtheducation3teaching.htm</teaching>
+                    <aimsgoals>healtheducation3aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_3.xml</lexique>
+                </tabs>
+                <res_class_id>health education 3</res_class_id>
+                <curric_name>Health Education 3</curric_name>
+                <banner>health/HE3.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181696_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_4.xml</out_ind>
+                    <teaching>healtheducation4teaching.htm</teaching>
+                    <aimsgoals>healtheducation4aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_4.xml</lexique>
+                </tabs>
+                <res_class_id>health education 4</res_class_id>
+                <curric_name>Health Education 4</curric_name>
+                <banner>health/HE4.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181697_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_5.xml</out_ind>
+                    <teaching>healtheducation5teaching.htm</teaching>
+                    <aimsgoals>healtheducation5aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_5.xml</lexique>
+                </tabs>
+                <res_class_id>health education 5</res_class_id>
+                <curric_name>Health Education 5</curric_name>
+                <banner>health/HE5.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181698_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_6.xml</out_ind>
+                    <teaching>healtheducation6teaching.htm</teaching>
+                    <aimsgoals>healtheducation6-9aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_6.xml</lexique>
+                </tabs>
+                <res_class_id>health education 6</res_class_id>
+                <curric_name>Health Education 6</curric_name>
+                <banner>health/HE6.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181699_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_7.xml</out_ind>
+                    <teaching>healtheducation7teaching.htm</teaching>
+                    <aimsgoals>healtheducation6-9aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_7.xml</lexique>
+                </tabs>
+                <res_class_id>health education 7</res_class_id>
+                <curric_name>Health Education 7</curric_name>
+                <banner>health/HE7.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181700_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_8.xml</out_ind>
+                    <teaching>healtheducation8teaching.htm</teaching>
+                    <aimsgoals>healtheducation6-9aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_8.xml</lexique>
+                </tabs>
+                <res_class_id>health education 8</res_class_id>
+                <curric_name>Health Education 8</curric_name>
+                <banner>health/HE8.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181801_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Health Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>health_education_9.xml</out_ind>
+                    <teaching>healtheducation9teaching.htm</teaching>
+                    <aimsgoals>healtheducation6-9aimsgoals.htm</aimsgoals>
+                    <lexique>health_lex_9.xml</lexique>
+                </tabs>
+                <res_class_id>health education 9</res_class_id>
+                <curric_name>Health Education 9</curric_name>
+                <banner>health/HE9.png</banner>
+                <dark_colour>#9bc4b2</dark_colour>
+        	<light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-181802_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="science">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_1.xml</out_ind>
+                    <teaching>science1-5teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_1_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 1</res_class_id>
+                <curric_name>Science 1</curric_name>
+                <banner>science/Science_1.png</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181915_1</doc_dl>
+            </level>      
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_2.xml</out_ind>
+                    <teaching>science1-5teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_2_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 2</res_class_id>
+                <curric_name>Science 2</curric_name>
+                <banner>science/Science_2.png</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181916_1</doc_dl>
+            </level>      
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_3.xml</out_ind>
+                    <teaching>science1-5teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_3_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 3</res_class_id>
+                <curric_name>Science 3</curric_name>
+                <banner>science/Science_3.png</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181917_1</doc_dl>
+            </level>      
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_4.xml</out_ind>
+                    <teaching>science1-5teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_4_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 4</res_class_id>
+                <curric_name>Science 4</curric_name>
+                <banner>science/Science_4.png</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181918_1</doc_dl>
+            </level>      
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_5.xml</out_ind>
+                    <teaching>science1-5teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 5</res_class_id>
+                <curric_name>Science 5</curric_name>
+                <banner>science/Science_5.png</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181919_1</doc_dl>
+            </level>      
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_6.xml</out_ind>
+                    <teaching>science6-9teaching.htm</teaching>
+                    <aimsgoals>science6aimsgoals.htm</aimsgoals>
+                    <lexique>science_6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 6</res_class_id>
+                <curric_name>Science 6</curric_name>
+                <banner>science/science6.gif</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181920_1</doc_dl>
+            </level>      
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_7.xml</out_ind>
+                    <teaching>science6-9teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_7_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 7</res_class_id>
+                <curric_name>Science 7</curric_name>
+                <banner>science/science7.gif</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181921_1</doc_dl>
+            </level>      
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_8.xml</out_ind>
+                    <teaching>science6-9teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_8_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 8</res_class_id>
+                <curric_name>Science 8</curric_name>
+                <banner>science/science8.gif</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181922_1</doc_dl>
+            </level>      
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_9.xml</out_ind>
+                    <teaching>science6-9teaching.htm</teaching>
+                    <aimsgoals>science7-9aimsgoals.htm</aimsgoals>
+                    <lexique>science_9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>science 9</res_class_id>
+                <curric_name>Science 9</curric_name>
+                <banner>science/science9.gif</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181923_1</doc_dl>
+            </level>  
+	    <level id="10">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <res_class_id>science 10</res_class_id>
+                <curric_name>Science 10</curric_name>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181914_1</doc_dl>
+            </level> 
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>science_k.xml</out_ind>
+                    <aimsgoals>science_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>science k</res_class_id>
+                <res_class_entry>science</res_class_entry>
+                <curric_name>Science K</curric_name>
+                <banner>science/sciencek.png</banner>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>  
+	    <level id="biology2030">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <res_class_id>biology 20 30</res_class_id>
+                <res_class_entry>science</res_class_entry>
+                <curric_name>Biology 20 30</curric_name>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181910_1</doc_dl>
+            </level>
+	    <level id="physics2030">
+                <dir_path>/library/Curriculum Website/Science/Curricula/</dir_path>
+                <res_class_id>physics 20 30</res_class_id>
+                <res_class_entry>science</res_class_entry>
+                <curric_name>Physics 20 30</curric_name>
+                <dark_colour>#008164</dark_colour>
+        	<light_colour>#e6f3f0</light_colour>
+                <doc_dl>xid-181913_1</doc_dl>
+            </level> 
+        </levels>
+    </subject>
+    <subject name="paa">
+        <levels>
+            <level id="communication102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Communication Media/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>communication_media_10_20_30.xml</out_ind>
+                    <aimsgoals>communication_media_aimsgoals.htm</aimsgoals>
+                    <teaching>communication_media_teaching.htm</teaching>
+                    <lexique>communication_media_lex.xml</lexique>
+                </tabs>
+                <res_class_id>communication media 10 20 30</res_class_id>
+                <curric_name>Communication Media 10, 20, 30</curric_name>
+                <banner>career/Communications_media_10_20_30.png</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181832_1</doc_dl>
+            </level>
+            <level id="construction102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Construction and Carpentry/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>construction_carpentry_10_20_30.xml</out_ind>
+                    <aimsgoals>construction_carpentry_aimsgoals.htm</aimsgoals>
+                    <teaching>construction_carpentry_teaching.htm</teaching>
+                    <lexique>carpentry_lex.xml</lexique>
+                </tabs>
+                <res_class_id>construction and carpentry 10 20 30</res_class_id>
+                <curric_name>Construction &amp; Carpentry 10, 20, 30</curric_name>
+                <banner>career/Construction_and_carpentry_10_20_30.png</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-198409_1</doc_dl>
+            </level>
+	    <level id="draftcompdes102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Drafting and Computer Aided Design/Curricula/</dir_path>
+                <res_class_id>drafting computer design 10 20 30</res_class_id>
+                <curric_name>Drafting and Computer Aided Design 10, 20, 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181839_1</doc_dl>
+            </level>
+            <level id="graphicarts2030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Graphic Arts/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>graphicarts_20_30.xml</out_ind>
+                    <aimsgoals>graphicartsaimsgoals.htm</aimsgoals>
+                    <teaching>graphicartsteaching.htm</teaching>
+                    <lexique>graphic_arts_lex.xml</lexique>
+                </tabs>
+                <res_class_id>graphic arts 20 30</res_class_id>
+                <curric_name>Graphic Arts 20, 30</curric_name>
+                <banner>career/GraphicArts2030.png</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-197593_1</doc_dl>
+            </level>
+            <level id="photography102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Photography/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>photography_10_20_30.xml</out_ind>
+                    <aimsgoals>photographyaimsgoals.htm</aimsgoals>
+                    <teaching>photographyteaching.htm</teaching>
+                    <lexique>photography_lex.xml</lexique>
+                </tabs>
+                <res_class_id>photography 10 20 30</res_class_id>
+                <curric_name>Photography 10, 20, 30</curric_name>
+                <banner>career/Photography102030.png</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-197592_1</doc_dl>
+            </level>
+            <level id="welding102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Welding/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>welding_10_20_30.xml</out_ind>
+                    <aimsgoals>weldingaimsgoals.htm</aimsgoals>
+                    <teaching>weldingteaching.htm</teaching>
+                    <lexique>welding_lex.xml</lexique>
+                </tabs>
+                <res_class_id>welding 10 20 a30 b30</res_class_id>
+                <curric_name>Welding 10, 20, A30, B30</curric_name>
+                <banner>career/Welding1.png</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181860_1</doc_dl>
+            </level>
+            <level id="energyandmines102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Energy and Mines/Curricula/</dir_path>
+                <res_class_id>energy and mines 10 20 30</res_class_id>
+                <curric_name>Energy &amp; Mines 10, 20, 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181842_1</doc_dl>
+            </level>
+            <level id="forestry2030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Forestry Studies/Curricula/</dir_path>
+                <res_class_id>forestry 20 30</res_class_id>
+                <curric_name>Forestry Studies 20, 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181847_1</doc_dl>
+            </level>
+            <level id="wildlife102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Wildlife Management/Curricula/</dir_path>
+                <res_class_id>wildlife management 10 20 30</res_class_id>
+                <curric_name>Wildlife Management 10, 20, 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181861_1</doc_dl>
+            </level>
+	    <level id="autobody102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Autobody/Curricula/</dir_path>
+                <res_class_id>autobody 10 20 30</res_class_id>
+                <curric_name>Autobody 10 20 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181828_1</doc_dl>
+            </level>
+	    <level id="mechauto102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Mechanical and Automotive/Curricula/</dir_path>
+                <res_class_id>mechauto 10 20 30</res_class_id>
+                <curric_name>Mechanical and Automotive 10 20 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181854_1</doc_dl>
+            </level>
+	    <level id="clothing1030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Clothing Textiles and Fashion/Curricula/</dir_path>
+                <res_class_id>clothing 10 30</res_class_id>
+                <curric_name>Clothing, Textiles &amp; Fashion 10 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181830_1</doc_dl>
+            </level>
+	    <level id="lifetrans2030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Life Transitions/Curricula/</dir_path>
+                <res_class_id>life transitions 20 30</res_class_id>
+                <curric_name>Life Transitions 20 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181852_1</doc_dl>
+            </level>
+	    <level id="electrical102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Electrical and Electronics/Curricula/</dir_path>
+                <res_class_id>electrical 10 20 30</res_class_id>
+                <curric_name>Electrical and Electronics 10, 20, 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181841_1</doc_dl>
+            </level>
+	    <level id="tourism30">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Tourism Hospitality and Enterpreneaurship/Curricula/</dir_path>
+                <res_class_id>tourism, hospitality, &amp; entrepreneurship 30</res_class_id>
+                <curric_name>Tourism, Hospitality, and Enterpreneaurship 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181858_1</doc_dl>
+            </level>
+	    <level id="mach102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Machining/Curricula/</dir_path>
+                <res_class_id>machining 10 20 30</res_class_id>
+                <curric_name>Machining 10, 20, 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181853_1</doc_dl>
+            </level>
+	    <level id="drivered">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Driver Education/Curricula/</dir_path>
+                <res_class_id>driver education</res_class_id>
+                <curric_name>Driver Education</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181840_1</doc_dl>
+            </level>
+	     <level id="entre30">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Enterpreneaurship/Curricula/</dir_path>
+                <res_class_id>entrepreneurship 30</res_class_id>
+                <curric_name>Entrepreneurship 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181843_1</doc_dl>
+            </level>
+	    <level id="housing30">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Housing/Curricula/</dir_path>
+                <res_class_id>housing 30</res_class_id>
+                <curric_name>Housing 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181849_1</doc_dl>
+            </level>
+	    <level id="careerwork102030">
+                <dir_path>/library/Curriculum Website/Practical and Applied Arts/Career and Work Exploration/Curricula/</dir_path>
+                <res_class_id>career and work exploration 10 20 30</res_class_id>
+                <curric_name>Career and Work Exploration 10 20 30</curric_name>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181829_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="mathematics">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_1.xml</out_ind>
+                    <aimsgoals>mathematicsk-1aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics1teaching.htm</teaching>
+                    <lexique>math_1_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 1</res_class_id>
+                <curric_name>Mathematics 1</curric_name>
+                <banner>mathematics/mathematics1.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181791_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_2.xml</out_ind>
+                    <aimsgoals>mathematics2-3aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics2teaching.htm</teaching>
+                    <lexique>math_2_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 2</res_class_id>
+                <curric_name>Mathematics 2</curric_name>
+                <banner>mathematics/mathematics2.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181792_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_3.xml</out_ind>
+                    <aimsgoals>mathematics2-3aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics3teaching.htm</teaching>
+                    <lexique>math_3_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 3</res_class_id>
+                <curric_name>Mathematics 3</curric_name>
+                <banner>mathematics/mathematics3.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181793_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_4.xml</out_ind>
+                    <aimsgoals>mathematics4aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics4teaching.htm</teaching>
+                    <lexique>math_4_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 4</res_class_id>
+                <curric_name>Mathematics 4</curric_name>
+                <banner>mathematics/mathematics4.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181794_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_5.xml</out_ind>
+                    <aimsgoals>mathematics5aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics5teaching.htm</teaching>
+                    <lexique>math_5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 5</res_class_id>
+                <curric_name>Mathematics 5</curric_name>
+                <banner>mathematics/mathematics5.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181795_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_6.xml</out_ind>
+                    <aimsgoals>mathematics6aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics6teaching.htm</teaching>
+                    <lexique>math_6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 6</res_class_id>
+                <curric_name>Mathematics 6</curric_name>
+                <banner>mathematics/mathematics6.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181796_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_7.xml</out_ind>
+                    <aimsgoals>mathematics7aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics7teaching.htm</teaching>
+                    <lexique>math_7_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 7</res_class_id>
+                <curric_name>Mathematics 7</curric_name>
+                <banner>mathematics/mathematics7.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181797_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_8.xml</out_ind>
+                    <aimsgoals>mathematics8aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics8teaching.htm</teaching>
+                    <lexique>math_8_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 8</res_class_id>
+                <curric_name>Mathematics 8</curric_name>
+                <banner>mathematics/mathematics8.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181798_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_9.xml</out_ind>
+                    <aimsgoals>mathematics9aimsgoals.htm</aimsgoals>
+                    <teaching>mathematics9teaching.htm</teaching>
+                    <lexique>math_9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematics 9</res_class_id>
+                <curric_name>Mathematics 9</curric_name>
+                <banner>mathematics/mathematics9.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181799_1</doc_dl>
+            </level>
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematics_k.xml</out_ind>
+                    <aimsgoals>math_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>mathematics k</res_class_id>
+                <res_class_entry>mathematics</res_class_entry>
+                <curric_name>Mathematics K</curric_name>
+                <banner>mathematics/mathematicsk.gif</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>
+            <level id="foundations10">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>foundations_mathematics_pre-calculus_10.xml</out_ind>
+                    <aimsgoals>pre-calculus10aimsgoals.htm</aimsgoals>
+                    <teaching>pre-calculus10.htm</teaching>
+                    <lexique>precalc_10_lex.xml</lexique>
+                </tabs>
+                <res_class_id>foundations of math and pre-calculus 10</res_class_id>
+                <curric_name>Fdts of Math &#38; Pre-Calculus 10</curric_name>
+                <banner>mathematics/FMPC10.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-181902_1</doc_dl>
+            </level>
+            <level id="foundations20">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>foundations_mathematics_20.xml</out_ind>
+                    <aimsgoals>foundations_math_20_aimsgoals.htm</aimsgoals>
+                    <teaching>foundations_math_20_teaching.htm</teaching>
+                    <lexique>foundations_20_lex.xml</lexique>
+                </tabs>
+                <res_class_id>foundations of mathematics 20</res_class_id>
+                <curric_name>Foundations of Mathematics 20</curric_name>
+                <banner>mathematics/FM20.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-182864_1</doc_dl>
+            </level>
+            <level id="foundations30">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>foundations_mathematics_30.xml</out_ind>
+                    <aimsgoals>foundations_math_20_aimsgoals.htm</aimsgoals>
+                    <teaching>foundations_math_20_teaching.htm</teaching>
+                    <lexique>foundations_30_lex.xml</lexique>
+                </tabs>
+                <res_class_id>foundations of mathematics 30</res_class_id>
+                <curric_name>Foundations of Mathematics 30</curric_name>
+                <banner>mathematics/Foundations_of_mathematics_30.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-198676_1</doc_dl>
+            </level>
+            <level id="precalc20">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>pre-calculus_20.xml</out_ind>
+                    <aimsgoals>pre-calculus20aimsgoals.htm</aimsgoals>
+                    <teaching>pre-calculus20.htm</teaching>
+                    <lexique>precalc_20_lex.xml</lexique>
+                </tabs>
+                <res_class_id>pre-calculus 20</res_class_id>
+                <curric_name>Pre-Calculus 20</curric_name>
+                <banner>mathematics/PC20.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-182865_1</doc_dl>
+            </level>
+            <level id="precalc30">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>pre-calculus_30.xml</out_ind>
+                    <aimsgoals>pre-calculus20aimsgoals.htm</aimsgoals>
+                    <teaching>pre-calculus30teaching.htm</teaching>
+                    <lexique>precalc_30_lex.xml</lexique>
+                </tabs>
+                <res_class_id>pre-calculus 30</res_class_id>
+                <curric_name>Pre-Calculus 30</curric_name>
+                <banner>mathematics/Pre-calculus_30.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-198675_1</doc_dl>
+            </level>
+            <level id="apprenticeship10">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>workplace_apprenticeship_10.xml</out_ind>
+                    <aimsgoals>workplace_apprenticeship10aimsgoals.htm</aimsgoals>
+                    <teaching>workplace_apprenticeship_10.htm</teaching>
+                    <lexique>apprenticeship_10_lex.xml</lexique>
+                </tabs>
+                <res_class_id>workplace and apprenticeship mathematics 10</res_class_id>
+                <curric_name>W &#38; A Math 10</curric_name>
+                <banner>mathematics/WAM10.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-182866_1</doc_dl>
+            </level>
+            <level id="apprenticeship20">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>workplace_apprenticeship_20.xml</out_ind>
+                    <aimsgoals>workplace_apprenticeship20aimsgoals.htm</aimsgoals>
+                    <teaching>workplace_apprenticeship_20.htm</teaching>
+                    <lexique>apprenticeship_20_lex.xml</lexique>
+                </tabs>
+                <res_class_id>workplace and apprenticeship mathematics 20</res_class_id>
+                <curric_name>W &#38; A Math 20</curric_name>
+                <banner>mathematics/WAM20.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-182867_1</doc_dl>
+            </level>
+            <level id="apprenticeship30">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>workplace_apprenticeship_30.xml</out_ind>
+                    <aimsgoals>workplace_apprenticeship20aimsgoals.htm</aimsgoals>
+                    <teaching>workplace_apprenticeship_30teaching.htm</teaching>
+                    <lexique>apprenticeship_30_lex.xml</lexique>
+                </tabs>
+                <res_class_id>workplace and apprenticeship mathematics 30</res_class_id>
+                <curric_name>W &#38; A Math 30</curric_name>
+                <banner>mathematics/Workplace_and_apprenticeship_30.png</banner>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-198677_1</doc_dl>
+            </level>
+            <level id="calculus30">
+                <dir_path>/library/Curriculum Website/Mathematics/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>calculus_30.xml</out_ind>
+                    <teaching>calculus_30_teaching.htm</teaching>
+                    <aimsgoals>calculus_30_aimsgoals.htm</aimsgoals>
+                    <lexique>calculus30_lex.xml</lexique>
+                </tabs>
+                <res_class_id>calculus 30</res_class_id>
+                <curric_name>Calculus 30</curric_name>
+                <dark_colour>#d86558</dark_colour>
+                <light_colour>#f7e0de</light_colour>
+                <doc_dl>xid-781398_1</doc_dl>
+            </level>            
+        </levels>
+    </subject>
+    <subject name="social">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_1.xml</out_ind>
+                    <aimsgoals>socialstudies1-5aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies1teaching.htm</teaching>
+                    <lexique>social_1_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 1</res_class_id>
+                <curric_name>Social Studies 1</curric_name>
+                <banner>social/SS1.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181933_1</doc_dl>
+            </level>            
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_2.xml</out_ind>
+                    <aimsgoals>socialstudies1-5aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies2teaching.htm</teaching>
+                    <lexique>social_2_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 2</res_class_id>
+                <curric_name>Social Studies 2</curric_name>
+                <banner>social/SS2.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181935_1</doc_dl>
+            </level>            
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_3.xml</out_ind>
+                    <aimsgoals>socialstudies1-5aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies3teaching.htm</teaching>
+                    <lexique>social_3_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 3</res_class_id>
+                <curric_name>Social Studies 3</curric_name>
+                <banner>social/SS3.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181936_1</doc_dl>
+            </level>            
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_4.xml</out_ind>
+                    <aimsgoals>socialstudies1-5aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies4teaching.htm</teaching>
+                    <lexique>social_4to6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 4</res_class_id>
+                <curric_name>Social Studies 4</curric_name>
+                <banner>social/SS4.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181937_1</doc_dl>
+            </level>            
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_5.xml</out_ind>
+                    <aimsgoals>socialstudies1-5aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies5teaching.htm</teaching>
+                    <lexique>social_4to6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 5</res_class_id>
+                <curric_name>Social Studies 5</curric_name>
+                <banner>social/SS5.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181938_1</doc_dl>
+            </level>            
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_6.xml</out_ind>
+                    <aimsgoals>socialstudies6aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies6teaching.htm</teaching>
+                    <lexique>social_4to6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 6</res_class_id>
+                <curric_name>Social Studies 6</curric_name>
+                <banner>social/SS6.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181939_1</doc_dl>
+            </level>            
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_7.xml</out_ind>
+                    <aimsgoals>socialstudies7-9aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies7teaching.htm</teaching>
+                    <lexique>social_7to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 7</res_class_id>
+                <curric_name>Social Studies 7</curric_name>
+                <banner>social/SS7.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181940_1</doc_dl>
+            </level>            
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_8.xml</out_ind>
+                    <aimsgoals>socialstudies7-9aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies8teaching.htm</teaching>
+                    <lexique>social_7to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 8</res_class_id>
+                <curric_name>Social Studies 8</curric_name>
+                <banner>social/SS8.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181941_1</doc_dl>
+            </level>            
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_9.xml</out_ind>
+                    <aimsgoals>socialstudies7-9aimsgoals.htm</aimsgoals>
+                    <teaching>socialstudies9teaching.htm</teaching>
+                    <lexique>social_7to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>social studies 9</res_class_id>
+                <curric_name>Social Studies 9</curric_name>
+                <banner>social/SS9.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181942_1</doc_dl>
+            </level>            
+            <level id="10">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                </tabs>
+                <res_class_id>social studies 10</res_class_id>
+                <curric_name>Social Studies 10</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181932_1</doc_dl>
+            </level>            
+            <level id="20">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                </tabs>
+                <res_class_id>social studies 20</res_class_id>
+                <curric_name>Social Studies 20</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181934_1</doc_dl>
+            </level>            
+            <level id="30">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                </tabs>
+                <res_class_id>social studies 30</res_class_id>
+                <curric_name>Social Studies 30: Canadian Studies</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-182895_1</doc_dl>
+            </level>            
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>social_studies_k.xml</out_ind>
+                    <aimsgoals>social_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>social studies k</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Social Studies K</curric_name>
+                <banner>social/SSK.png</banner>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>            
+            <level id="psych20">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>psychology 20</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Psychology 20</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181931_1</doc_dl>
+            </level>            
+            <level id="psych30">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>psychology 30</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Psychology 30</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-182894_1</doc_dl>
+            </level>  
+	    <level id="nativestudies10">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>native studies 10</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Native Studies 10</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181928_1</doc_dl>
+            </level>  
+	    <level id="nativestudies20">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>native studies 20</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Native Studies 20</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181929_1</doc_dl>
+            </level>  
+            <level id="nativestudies30">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>native studies 30</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Native Studies 30: Canadian Studies</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181930_1</doc_dl>
+            </level>  
+	    <level id="history30">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>history 30</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>History 30: Canadian Studies</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181926_1</doc_dl>
+            </level> 
+	    <level id="economics30">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>economics 30</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Economics 30</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-187419_1</doc_dl>
+            </level> 
+            <level id="history20">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>history 20</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>History 20</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181925_1</doc_dl>
+            </level> 
+	    <level id="history10">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>history 10</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>History 10</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181924_1</doc_dl>
+            </level> 
+	    <level id="law30">
+                <dir_path>/library/Curriculum Website/Social Studies/Curricula/</dir_path>
+                <tabs>                    
+                </tabs>
+                <res_class_id>law 30</res_class_id>
+                <res_class_entry>social_studies</res_class_entry>
+                <curric_name>Law 30</curric_name>
+                <dark_colour>#8f3b67</dark_colour>
+                <light_colour>#e9d8e1</light_colour>
+                <doc_dl>xid-181927_1</doc_dl>
+            </level> 
+        </levels>
+    </subject>
+    <subject name="physical_education">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_1.xml</out_ind>
+                    <aimsgoals>physicaleducation1-5aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation1teaching.htm</teaching>
+                    <lexique>phys_ed_1to5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 1</res_class_id>
+                <curric_name>Physical Education 1</curric_name>
+                <banner>physical/PE1.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181815_1</doc_dl>
+            </level>                        
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_2.xml</out_ind>
+                    <aimsgoals>physicaleducation1-5aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation2teaching.htm</teaching>
+                    <lexique>phys_ed_1to5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 2</res_class_id>
+                <curric_name>Physical Education 2</curric_name>
+                <banner>physical/PE2.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181817_1</doc_dl>
+            </level>                        
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_3.xml</out_ind>
+                    <aimsgoals>physicaleducation1-5aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation3teaching.htm</teaching>
+                    <lexique>phys_ed_1to5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 3</res_class_id>
+                <curric_name>Physical Education 3</curric_name>
+                <banner>physical/PE3.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181818_1</doc_dl>
+            </level>                        
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_4.xml</out_ind>
+                    <aimsgoals>physicaleducation1-5aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation4teaching.htm</teaching>
+                    <lexique>phys_ed_1to5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 4</res_class_id>
+                <curric_name>Physical Education 4</curric_name>
+                <banner>physical/PE4.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181819_1</doc_dl>
+            </level>                        
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_5.xml</out_ind>
+                    <aimsgoals>physicaleducation1-5aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation5teaching.htm</teaching>
+                    <lexique>phys_ed_1to5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 5</res_class_id>
+                <curric_name>Physical Education 5</curric_name>
+                <banner>physical/PE5.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181820_1</doc_dl>
+            </level>                        
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_6.xml</out_ind>
+                    <aimsgoals>physicaleducation6aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation6teaching.htm</teaching>
+                    <lexique>phys_ed_6to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 6</res_class_id>
+                <curric_name>Physical Education 6</curric_name>
+                <banner>physical/PE6.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181821_1</doc_dl>
+            </level>                        
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_7.xml</out_ind>
+                    <aimsgoals>physicaleducation7-9aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation7teaching.htm</teaching>
+                    <lexique>phys_ed_6to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 7</res_class_id>
+                <curric_name>Physical Education 7</curric_name>
+                <banner>physical/PE7.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181822_1</doc_dl>
+            </level>                        
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_8.xml</out_ind>
+                    <aimsgoals>physicaleducation7-9aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation8teaching.htm</teaching>
+                    <lexique>phys_ed_6to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 8</res_class_id>
+                <curric_name>Physical Education 8</curric_name>
+                <banner>physical/PE8.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181823_1</doc_dl>
+            </level>                        
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_9.xml</out_ind>
+                    <aimsgoals>physicaleducation7-9aimsgoals.htm</aimsgoals>
+                    <teaching>physicaleducation9teaching.htm</teaching>
+                    <lexique>phys_ed_6to9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>physical education 9</res_class_id>
+                <curric_name>Physical Education 9</curric_name>
+                <banner>physical/PE9.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-181824_1</doc_dl>
+            </level>                        
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>physical_education_k.xml</out_ind>
+                    <aimsgoals>pe_aimsgoals_k.htm</aimsgoals>
+                </tabs>
+                <res_class_id>physical education k</res_class_id>
+                <res_class_entry>physical_education</res_class_entry>
+                <curric_name>Physical Education K</curric_name>
+                <banner>physical/PEK.png</banner>
+                <dark_colour>#936fb1</dark_colour>
+                <light_colour>#e9e2ef</light_colour>
+                <doc_dl>xid-197984_1</doc_dl>
+            </level>                        
+            <level id="wellness10">
+                <dir_path>/library/Curriculum Website/Physical Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>wellness_10.xml</out_ind>
+                    <aimsgoals>wellness10aimsgoals.htm</aimsgoals>
+                    <teaching>wellness10teaching.htm</teaching>
+                    <lexique>wellness10_lex.xml</lexique>
+                </tabs>
+                <res_class_id>wellness 10</res_class_id>
+                <res_class_entry>physical_education</res_class_entry>
+                <curric_name>Wellness 10</curric_name>
+                <dark_colour>#009ec5</dark_colour>
+                <light_colour>#cdecf2</light_colour>
+                <doc_dl>xid-780981_1</doc_dl>
+            </level>                        
+        </levels>
+    </subject>
+    <subject name="career_education">
+        <levels>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Career Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>career_education_6.xml</out_ind>
+                    <aimsgoals>careereducation6aimsgoals.htm</aimsgoals>
+                    <teaching>careereducation6-9teaching.htm</teaching>
+                    <lexique>career_lex.xml</lexique>
+                </tabs>
+                <res_class_id>career education 6</res_class_id>
+                <curric_name>Career Education 6</curric_name>
+                <banner>career/careereducation6.gif</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181768_1</doc_dl>
+            </level>                                    
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Career Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>career_education_7.xml</out_ind>
+                    <aimsgoals>careereducation7-9aimsgoals.htm</aimsgoals>
+                    <teaching>careereducation6-9teaching.htm</teaching>
+                    <lexique>career_lex.xml</lexique>
+                </tabs>
+                <res_class_id>career education 7</res_class_id>
+                <curric_name>Career Education 7</curric_name>
+                <banner>career/careereducation7.gif</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181769_1</doc_dl>
+            </level>                                    
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Career Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>career_education_8.xml</out_ind>
+                    <aimsgoals>careereducation7-9aimsgoals.htm</aimsgoals>
+                    <teaching>careereducation6-9teaching.htm</teaching>
+                    <lexique>career_lex.xml</lexique>
+                </tabs>
+                <res_class_id>career education 8</res_class_id>
+                <curric_name>Career Education 8</curric_name>
+                <banner>career/careereducation8.gif</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181770_1</doc_dl>
+            </level>                                    
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Career Education/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>career_education_9.xml</out_ind>
+                    <aimsgoals>careereducation7-9aimsgoals.htm</aimsgoals>
+                    <teaching>careereducation6-9teaching.htm</teaching>
+                    <lexique>career_lex.xml</lexique>
+                </tabs>
+                <res_class_id>career education 9</res_class_id>
+                <curric_name>Career Education 9</curric_name>
+                <banner>career/careereducation9.gif</banner>
+                <dark_colour>#a24c3d</dark_colour>
+                <light_colour>#ecdbd8</light_colour>
+                <doc_dl>xid-181771_1</doc_dl>
+            </level>                                    
+        </levels>
+    </subject>
+    <subject name="bienetre_i">
+        <levels>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_3_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre3.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 3</res_class_id>
+                <curric_name>Bienêtre 3</curric_name>
+        	<banner>bienetre/bien3.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-180452_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_4_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre4.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 4</res_class_id>
+                <curric_name>Bienêtre 4</curric_name>
+        	<banner>bienetre/bien4.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-180453_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_5_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre5.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 5</res_class_id>
+                <curric_name>Bienêtre 5</curric_name>
+        	<banner>bienetre/bien5.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-182893_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_6_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre6.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 6</res_class_id>
+                <curric_name>Bienêtre 6</curric_name>
+        	<banner>bienetre/bien6.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-182892_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_7_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre7.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 7</res_class_id>
+                <curric_name>Bienêtre 7</curric_name>
+        	<banner>bienetre/bien7.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-182889_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_8_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre8.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 8</res_class_id>
+                <curric_name>Bienêtre 8</curric_name>
+        	<banner>bienetre/bien8.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-182890_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Bienetre Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_9_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>bienetre9.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre i 9</res_class_id>
+                <curric_name>Bienêtre 9</curric_name>
+        	<banner>bienetre/bien9.gif</banner>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-182891_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="bienetre_f">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_1_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_1_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 1</res_class_id>
+                <curric_name>Bienêtre 1</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786116_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_2_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_2_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 2</res_class_id>
+                <curric_name>Bienêtre 2</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786119_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_3_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_3_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 3</res_class_id>
+                <curric_name>Bienêtre 3</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786123_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_4_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_4_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 4</res_class_id>
+                <curric_name>Bienêtre 4</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786115_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_5_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_5_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 5</res_class_id>
+                <curric_name>Bienêtre 5</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786120_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_6_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_6_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 6</res_class_id>
+                <curric_name>Bienêtre 6</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786122_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_7_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_7_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 7</res_class_id>
+                <curric_name>Bienêtre 7</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786118_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_8_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_8_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 8</res_class_id>
+                <curric_name>Bienêtre 8</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786117_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Bienetre Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>bienetre_9_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>bienetre_9_matiere_f.htm</matiere>
+                </tabs>
+                <res_class_id>bienetre f 9</res_class_id>
+                <curric_name>Bienêtre 9</curric_name>
+        	<dark_colour>#9bc4b2</dark_colour>
+                <light_colour>#ebf3f0</light_colour>
+                <doc_dl>xid-786121_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="education_artistique_i">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 1</res_class_id>
+                <curric_name>Éducation Artistique 1</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181585_1</doc_dl>                
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 2</res_class_id>
+                <curric_name>Éducation Artistique 2</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181585_1</doc_dl>                
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 3</res_class_id>
+                <curric_name>Éducation Artistique 3</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181585_1</doc_dl>                
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 4</res_class_id>
+                <curric_name>Éducation Artistique 4</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181585_1</doc_dl>                
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 5</res_class_id>
+                <curric_name>Éducation Artistique 5</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+                <doc_dl>xid-181585_1</doc_dl>                
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_artistique_6_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>edart6.htm</matiere>
+                </tabs>
+                <res_class_id>education artistique i 6</res_class_id>
+                <curric_name>Éducation Artistique</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+        	<banner>ed_art_imm/edart6.gif</banner>
+                <doc_dl>xid-198927_1</doc_dl>                
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_artistique_7_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>edart7.htm</matiere>
+                </tabs>
+                <res_class_id>education artistique i 7</res_class_id>
+                <curric_name>Éducation Artistique</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+        	<banner>ed_art_imm/edart7.gif</banner>
+                <doc_dl>xid-198927_1</doc_dl>                
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_artistique_8_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>edart8.htm</matiere>
+                </tabs>
+                <res_class_id>education artistique i 8</res_class_id>
+                <curric_name>Éducation Artistique</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+        	<banner>ed_art_imm/edart8.gif</banner>
+                <doc_dl>xid-198927_1</doc_dl>                
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_artistique_9_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>edart9.htm</matiere>
+                </tabs>
+                <res_class_id>education artistique i 9</res_class_id>
+                <curric_name>Éducation Artistique</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+        	<banner>ed_art_imm/edart9.gif</banner>
+                <doc_dl>xid-198927_1</doc_dl>                
+            </level>
+            <level id="10">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 10</res_class_id>
+                <curric_name>Éducation Artistique 10</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+            </level>
+            <level id="20">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 20</res_class_id>
+                <curric_name>Éducation Artistique 20</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+            </level>
+            <level id="30">
+                <dir_path>/library/Curriculum Website/Education Artistique Imm/Curricula/</dir_path>
+                <res_class_id>education artistique i 30</res_class_id>
+                <curric_name>Éducation Artistique 30</curric_name>
+                <light_colour>#e7f0f8</light_colour>
+                <dark_colour>#0e6bb6</dark_colour>
+            </level>
+        </levels>
+    </subject>
+    <subject name="education_physique_if">
+        <levels>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_3_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_3_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 3</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys3.gif</banner>
+                <doc_dl>xid-802184_1</doc_dl>                                
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_4_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_4_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 4</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys4.gif</banner>
+                <doc_dl>xid-802182_1</doc_dl>                                
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_5_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_5_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 5</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys5.gif</banner>
+                <doc_dl>xid-802185_1</doc_dl>                                
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_6_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_6_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 6</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys6.gif</banner>
+                <doc_dl>xid-802179_1</doc_dl>                                
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_7_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_7_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 7</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys7.gif</banner>
+                <doc_dl>xid-802180_1</doc_dl>                                
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_8_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_8_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 8</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys8.gif</banner>
+                <doc_dl>xid-802181_1</doc_dl>                                
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Education Physique Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>education_physique_9_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>ed_physique_9_if_matiere.htm</matiere>
+                    <lexique>ed_physique_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>education physique if 9</res_class_id>
+                <curric_name>Éducation Physique</curric_name>
+                <light_colour>#e9e2ef</light_colour>
+                <dark_colour>#936fb1</dark_colour>
+        	<banner>ed_phys/edphys9.gif</banner>
+                <doc_dl>xid-802183_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="francais_i">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_1_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais1.htm</matiere>
+                    <lexique>francais_1_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 1</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim1.gif</banner>
+                <doc_dl>xid-181705_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_4_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais4.htm</matiere>
+                    <lexique>francais_4_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 4</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim4.gif</banner>
+                <doc_dl>xid-181709_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_5_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais5.htm</matiere>
+                    <lexique>francais_5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 5</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim5.gif</banner>
+                <doc_dl>xid-181710_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_6_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais6.htm</matiere>
+                    <lexique>francais_6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 6</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim6.gif</banner>
+                <doc_dl>xid-181711_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_7_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais7.htm</matiere>
+                    <lexique>francais_7_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 7</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim7.gif</banner>
+                <doc_dl>xid-181712_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_8_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais8.htm</matiere>
+                    <lexique>francais_8_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 8</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim8.gif</banner>
+                <doc_dl>xid-181713_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Francais Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>francais_9_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>francais9.htm</matiere>
+                    <lexique>francais_9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>francais i 9</res_class_id>
+                <curric_name>Français en Immersion</curric_name>
+                <light_colour>#e3e6f2</light_colour>
+                <dark_colour>#7481bf</dark_colour>
+        	<banner>immersion/frim9.gif</banner>
+                <doc_dl>xid-181714_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="petite_enfance_f">
+        <levels>
+            <level id="p">
+                <dir_path>/library/Curriculum Website/Maternelle Fran/Curricula/</dir_path>
+                <res_class_id>petite enfance f</res_class_id>
+                <curric_name>Petite Enfance Programme Fransaskois</curric_name>
+                <light_colour>#e3ece9</light_colour>
+                <dark_colour>#72a493</dark_colour>
+                <doc_dl>xid-181720_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="maternelle_f">
+        <levels>
+            <level id="m">                
+                <dir_path>/library/Curriculum Website/Maternelle Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>maternelle_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>maternelle.htm</matiere>
+                    <lexique>maternelle_lex.xml</lexique>
+                </tabs>
+                <res_class_id>maternelle f</res_class_id>
+                <curric_name>Maternelle Programme Fransaskois</curric_name>
+                <light_colour>#e3ece9</light_colour>
+                <dark_colour>#72a493</dark_colour>
+        	<banner>maternelle/Maternelle.png</banner>
+                <doc_dl>xid-181719_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="maternelle_i">
+        <levels>
+            <level id="m">
+                <dir_path>/library/Curriculum Website/Maternelle Imm/Curricula/</dir_path>
+                <res_class_id>maternelle i</res_class_id>
+                <curric_name>Maternelle Programme Immersion</curric_name>
+                <light_colour>#e3ece9</light_colour>
+                <dark_colour>#72a493</dark_colour>
+        	<banner>maternelle/Maternelle.png</banner>
+            </level>
+        </levels>
+    </subject>
+    <subject name="mathematiques_if">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_1_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_1_if_matiere.htm</matiere>
+                    <lexique>math_1_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 1</res_class_id>
+                <curric_name>Mathématiques 1</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math1.gif</banner>
+                <doc_dl>xid-181723_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_2_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_2_if_matiere.htm</matiere>                    
+                    <lexique>math_2_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 2</res_class_id>
+                <curric_name>Mathématiques 2</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math2.gif</banner>
+                <doc_dl>xid-181725_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_3_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_3_if_matiere.htm</matiere>                    
+                    <lexique>math_3_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 3</res_class_id>
+                <curric_name>Mathématiques 3</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math3.gif</banner>
+                <doc_dl>xid-181726_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_4_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_4_if_matiere.htm</matiere>                    
+                    <lexique>math_4_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 4</res_class_id>
+                <curric_name>Mathématiques 4</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math4.gif</banner>
+                <doc_dl>xid-181727_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_5_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_5_if_matiere.htm</matiere>                    
+                    <lexique>math_5_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 5</res_class_id>
+                <curric_name>Mathématiques 5</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math5.gif</banner>
+                <doc_dl>xid-181728_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_6_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_6_if_matiere.htm</matiere>                    
+                    <lexique>math_6_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 6</res_class_id>
+                <curric_name>Mathématiques 6</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math6.gif</banner>
+                <doc_dl>xid-181729_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_7_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_7_if_matiere.htm</matiere>                    
+                    <lexique>math_7_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 7</res_class_id>
+                <curric_name>Mathématiques 7</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math7.gif</banner>
+                <doc_dl>xid-181730_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_8_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_8_if_matiere.htm</matiere>                    
+                    <lexique>math_8_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 8</res_class_id>
+                <curric_name>Mathématiques 8</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math8.gif</banner>
+                <doc_dl>xid-181731_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_9_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_9_if_matiere.htm</matiere>                    
+                    <lexique>math_9_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if 9</res_class_id>
+                <curric_name>Mathématiques 9</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/math9.gif</banner>
+                <doc_dl>xid-181732_1</doc_dl>
+            </level>
+            <level id="fondements30">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_30_fond.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_30_fond_matiere.htm</matiere>                    
+                    <lexique>math_fond30_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if fondements 30</res_class_id>
+                <curric_name>Mathématiques 30 : Fondements</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/Mathematiques_30_Fondements.png</banner>
+                <doc_dl>xid-786126_1</doc_dl>
+            </level>
+            <level id="milieu30">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_30_milieu.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_30_milieu_matiere.htm</matiere>                    
+                    <lexique>math_milieu30_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if milieu 30</res_class_id>
+                <curric_name>Mathématiques 30 : Milieu de Travail et Formation d’Apprentis</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/Mathematiques_30_Milieu_de_travail_et_formation_dapprentis.png</banner>
+                <doc_dl>xid-786128_1</doc_dl>
+            </level>
+            <level id="precalcul30">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_30_precalcul.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_30_precalcul_matiere.htm</matiere>                    
+                    <lexique>math_precalc30_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if precalc 30</res_class_id>
+                <curric_name>Mathématiques 30 : Precalcul</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/Mathematiques_30_Precalcul.png</banner>
+                <doc_dl>xid-786127_1</doc_dl>
+            </level>
+            <level id="calcul30">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>math_30_if_calcul.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>math_30_if_calcul_matiere.htm</matiere>                    
+                    <lexique>math_30_if_calcul_lex.xml</lexique>
+                </tabs>
+                <res_class_id>mathematiques if calc 30</res_class_id>
+                <curric_name>Mathématiques 30 : Calcul 30</curric_name>
+                <light_colour>#f7e0de</light_colour>
+                <dark_colour>#d86558</dark_colour>
+                <doc_dl>xid-801507_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="mathematiques_f">
+        <levels>
+            <level id="fondements10">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_10_fondements_et_precalcul_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>fondements_et_precalcul_10_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques fondements f 10</res_class_id>
+                <curric_name>Mathématiques 10 : Fondements et Precalcul</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/fondements_et_precalcul_10.png</banner>
+                <doc_dl>xid-200238_1</doc_dl>
+            </level>
+            <level id="formation10">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_10_formation_d_apprentis_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>formation_d_apprentis_10_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques formation f 10</res_class_id>
+                <curric_name>Mathématiques 10 : Milieu de Travail et Formation d’Apprentis</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/formation_d_apprentis_10.png</banner>
+                <doc_dl>xid-200239_1</doc_dl>
+            </level>
+            <level id="fondements20">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_20_fondements_des_mathematiques_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>fondements_des_mathematiques_20_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques fondements f 20</res_class_id>
+                <curric_name>Mathématiques 20 : Fondements des Mathématiques</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/fondements_des_math_20.png</banner>
+                <doc_dl>xid-198907_1</doc_dl>
+            </level>
+            <level id="formation20">
+                <dir_path>/library/Curriculum Website/Mathematiques Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_20_formation_d_apprentis_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>formation_d_apprentis_20_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques formation f 20</res_class_id>
+                <curric_name>Mathématiques 20 : Milieu de Travail et Tormation d’Apprentis</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/formation_d_apprentis_20.png</banner>
+                <doc_dl>xid-198908_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="mathematiques_i">
+        <levels>
+            <level id="fondements10">
+                <dir_path>/library/Curriculum Website/Mathematiques Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_10_fondements_et_precalcul_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>fondements_et_precalcul_10_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques fondements i 10</res_class_id>
+                <curric_name>Mathématiques 10 : Fondements et Precalcul</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/fondements_et_precalcul_10_imm.png</banner>
+                <doc_dl>xid-200238_1</doc_dl>
+            </level>
+            <level id="formation10">
+                <dir_path>/library/Curriculum Website/Mathematiques Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_10_formation_d_apprentis_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>formation_d_apprentis_10_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques formation i 10</res_class_id>
+                <curric_name>Mathématiques 10 : Milieu de Travail et Formation d’Apprentis</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/formation_d_apprentis_10_imm.png</banner>
+                <doc_dl>xid-200239_1</doc_dl>
+            </level>
+            <level id="fondements20">
+                <dir_path>/library/Curriculum Website/Mathematiques Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_20_fondements_des_mathematiques_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>fondements_des_mathematiques_20_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques fondements i 20</res_class_id>
+                <curric_name>Mathématiques 20 : Fondements des Mathématiques</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/Fondements_des_mathematiques_et_precalcul_20_imm.png</banner>
+                <doc_dl>xid-198907_1</doc_dl>
+            </level>
+            <level id="formation20">
+                <dir_path>/library/Curriculum Website/Mathematiques Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>mathematiques_20_formation_d_apprentis_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>formation_d_apprentis_20_matiere.htm</matiere>
+                </tabs>
+                <res_class_id>mathematiques formation i 20</res_class_id>
+                <curric_name>Mathématiques 20 : Milieu de Travail et Tormation d’Apprentis</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>math/Milieu_de_travail_et_formation_dapprentis_20_imm.png</banner>
+                <doc_dl>xid-198908_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="sciences_if">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <res_class_id>sciences if 1</res_class_id>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <res_class_id>sciences if 2</res_class_id>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_3_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences_3_if_matiere.htm</matiere>
+                    <lexique>sciences_3_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sciences if 3</res_class_id>
+                <curric_name>Sciences 3</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_4_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences_4_if_matiere.htm</matiere>
+                    <lexique>sciences_4_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sciences if 4</res_class_id>
+                <curric_name>Sciences 4</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_5_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences_5_if_matiere.htm</matiere>
+                    <lexique>sciences_5_if_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sciences if 5</res_class_id>
+                <curric_name>Sciences 5</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_6_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences6.htm</matiere>
+                </tabs>
+                <res_class_id>sciences if 6</res_class_id>
+                <curric_name>Sciences 6</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+                <banner>sciences/sci6.gif</banner>
+                <doc_dl>xid-182887_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_7_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences7.htm</matiere>
+                </tabs>
+                <res_class_id>sciences if 7</res_class_id>
+                <curric_name>Sciences 7</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+                <banner>sciences/sci7.gif</banner>
+                <doc_dl>xid-181739_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_8_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences8.htm</matiere>
+                </tabs>
+                <res_class_id>sciences if 8</res_class_id>
+                <curric_name>Sciences 8</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+                <banner>sciences/sci8.gif</banner>
+                <doc_dl>xid-181740_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Sciences Imm Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_9_if.xml</out_ind>
+                    <fondements>fondements_IMM_and_FRAN.htm</fondements>
+                    <matiere>sciences9.htm</matiere>
+                </tabs>
+                <res_class_id>sciences if 9</res_class_id>
+                <curric_name>Sciences 9</curric_name>
+                <light_colour>#C9F0CB</light_colour>
+                <dark_colour>#00B509</dark_colour>
+                <banner>sciences/sci9.gif</banner>
+                <doc_dl>xid-181741_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="sciences_humaines_f">
+        <levels>
+            <level id="1">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_1_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_f.html</matiere>
+                    <lexique>sciences_humaines_1_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 1</res_class_id>
+                <curric_name>Sciences Humaines 1</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hm_fr/Sciences_humaines_1_fran.png</banner>
+                <doc_dl>xid-180014_1</doc_dl>
+            </level>
+            <level id="2">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_2_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_f.html</matiere>
+                    <lexique>sciences_humaines_2_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 2</res_class_id>
+                <curric_name>Sciences Humaines 2</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hm_fr/Sciences_humaines_2_fran.png</banner>
+                <doc_dl>xid-180015_1</doc_dl>
+            </level>
+            <level id="3">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_3_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_f.html</matiere>
+                    <lexique>sciences_humaines_3_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 3</res_class_id>
+                <curric_name>Sciences Humaines 3</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hm_fr/Sciences_humaines_3_fran.png</banner>
+                <doc_dl>xid-180016_1</doc_dl>
+            </level>
+            <level id="4">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_4_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_f.html</matiere>
+                    <lexique>sciences_humaines_4_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 4</res_class_id>
+                <curric_name>Sciences Humaines 4</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hm_fr/Sciences_humaines_4_fran.png</banner>
+                <doc_dl>xid-180017_1</doc_dl>
+            </level>
+            <level id="5">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_5_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_f.html</matiere>
+                    <lexique>sciences_humaines_5_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 5</res_class_id>
+                <curric_name>Sciences Humaines 5</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hm_fr/Sciences_humaines_5_fran.png</banner>
+                <doc_dl>xid-180018_1</doc_dl>
+            </level>
+            <level id="6">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_6_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_6_f.html</matiere>
+                    <lexique>sciences_humaines_6_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 6</res_class_id>
+                <curric_name>Sciences Humaines 6</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-786325_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_7_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>matiere_sciences_humaines_7_f.html</matiere>                    
+                    <lexique>sciences_humaines_7_lex_f.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines f 7</res_class_id>
+                <curric_name>Sciences Humaines 7</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>                
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <res_class_id>sciences humaines f 8</res_class_id>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <res_class_id>sciences humaines f 9</res_class_id>
+            </level>
+            <level id="sociales10">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <res_class_id>sciences sociales f 10</res_class_id>
+                <curric_name>Sciences Sociales 10</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-181684_1</doc_dl>
+            </level>
+            <level id="sociales20">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <res_class_id>sciences sociales f 20</res_class_id>
+                <curric_name>Sciences Sociales 20</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-181685_1</doc_dl>
+            </level>
+            <level id="sociales30">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Fran/Curricula/</dir_path>
+                <res_class_id>sciences sociales f 30</res_class_id>
+                <curric_name>Sciences Sociales 30</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-181686_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="sciences_humaines_i">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <res_class_id>sciences humaines i 1</res_class_id>
+                <curric_name>Sciences Humaines 1</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-181679_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <res_class_id>sciences humaines i 2</res_class_id>
+                <curric_name>Sciences Humaines 2</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-181679_1</doc_dl>
+            </level>
+            <level id="3">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_3_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_3_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 3</res_class_id>
+                <curric_name>Sciences Humaines 3</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_3.png</banner>
+                <doc_dl>xid-182868_1</doc_dl>
+            </level>
+            <level id="4">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_4_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_4_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 4</res_class_id>
+                <curric_name>Sciences Humaines 4</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_4.png</banner>
+                <doc_dl>xid-182869_1</doc_dl>
+            </level>
+            <level id="5">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_5_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_5_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 5</res_class_id>
+                <curric_name>Sciences Humaines 5</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_5.png</banner>
+                <doc_dl>xid-182870_1</doc_dl>
+            </level>
+            <level id="6">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_6_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_6_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 6</res_class_id>
+                <curric_name>Sciences Humaines 6</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_6.png</banner>
+                <doc_dl>xid-182871_1</doc_dl>
+            </level>
+            <level id="7">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_7_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_7_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 7</res_class_id>
+                <curric_name>Sciences Humaines 7</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_7.png</banner>
+                <doc_dl>xid-181682_1</doc_dl>
+            </level>
+            <level id="8">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_8_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_8_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 8</res_class_id>
+                <curric_name>Sciences Humaines 8</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_8.png</banner>
+                <doc_dl>xid-182873_1</doc_dl>
+            </level>
+            <level id="9">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sciences_humaines_9_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>matiere_sciences_humaines_i.html</matiere>
+                    <lexique>sciences_humaines_9_lex_i.xml</lexique>
+                </tabs>
+                <res_class_id>sciences humaines i 9</res_class_id>
+                <curric_name>Sciences Humaines 9</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>sc_hum_imm/Sciences_humaines_9.png</banner>
+                <doc_dl>xid-182883_1</doc_dl>
+            </level>
+            <level id="histoire10">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <res_class_id>histoire i 10</res_class_id>
+                <curric_name>Histoire 10</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-187579_1</doc_dl>
+            </level>
+            <level id="histoire20">                
+                <dir_path>/library/Curriculum Website/Sciences Humaines Imm/Curricula/</dir_path>
+                <res_class_id>histoire i 20</res_class_id>
+                <curric_name>Histoire 20</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <doc_dl>xid-816683_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="sensibilisation_f">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <res_class_id>sensibilisation f 1</res_class_id>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <res_class_id>sensibilisation f 2</res_class_id>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <res_class_id>sensibilisation f 3</res_class_id>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <res_class_id>sensibilisation f 4</res_class_id>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <res_class_id>sensibilisation f 5</res_class_id>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensibilisation_aux_carrieres_6_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>sensauxcarr6.htm</matiere>
+                    <lexique>sensauxcarr6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation f 6</res_class_id>
+                <curric_name>Sensibilisation aux carrières 6</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib6.gif</banner>
+                <doc_dl>xid-200249_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensibilisation_aux_carrieres_7_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>sensauxcarr7.htm</matiere>
+                    <lexique>sensauxcarr7_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation f 7</res_class_id>
+                <curric_name>Sensibilisation aux carrières 7</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib7.gif</banner>
+                <doc_dl>xid-200250_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensibilisation_aux_carrieres_8_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>sensauxcarr8.htm</matiere>
+                    <lexique>sensauxcarr8_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation f 8</res_class_id>
+                <curric_name>Sensibilisation aux carrières 8</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib8.gif</banner>
+                <doc_dl>xid-200251_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Fran/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensibilisation_aux_carrieres_9_f.xml</out_ind>
+                    <fondements>fondements_FRAN.htm</fondements>
+                    <matiere>sensauxcarr9.htm</matiere>
+                    <lexique>sensauxcarr9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation f 9</res_class_id>
+                <curric_name>Sensibilisation aux carrières 9</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib9.gif</banner>
+                <doc_dl>xid-200252_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="sensibilisation_i">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <res_class_id>sensibilisation i 1</res_class_id>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <res_class_id>sensibilisation i 2</res_class_id>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <res_class_id>sensibilisation i 3</res_class_id>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <res_class_id>sensibilisation i 4</res_class_id>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <res_class_id>sensibilisation i 5</res_class_id>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensauxcarr_6_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>sensauxcarr_6_i_matiere.htm</matiere>
+                    <lexique>sensauxcarr_689_i_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation i 6</res_class_id>
+                <curric_name>Sensibilisation aux carrières 6</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib6_i.png</banner>
+                <doc_dl>xid-801501_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensauxcarr_7_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>sensauxcarr_7_i_matiere.htm</matiere>
+                    <lexique>sensauxcarr_7_i_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation i 7</res_class_id>
+                <curric_name>Sensibilisation aux carrières 7</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib7_i.png</banner>
+                <doc_dl>xid-801504_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensauxcarr_8_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>sensauxcarr_8_i_matiere.htm</matiere>
+                    <lexique>sensauxcarr_689_i_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation i 8</res_class_id>
+                <curric_name>Sensibilisation aux carrières 8</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib8_i.png</banner>
+                <doc_dl>xid-801503_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Sensibilisation aux Carrieres Imm/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>sensauxcarr_9_i.xml</out_ind>
+                    <fondements>fondements_IMM.htm</fondements>
+                    <matiere>sensauxcarr_9_i_matiere.htm</matiere>
+                    <lexique>sensauxcarr_689_i_lex.xml</lexique>
+                </tabs>
+                <res_class_id>sensibilisation i 9</res_class_id>
+                <curric_name>Sensibilisation aux carrières 9</curric_name>
+                <light_colour>#ecdbd8</light_colour>
+                <dark_colour>#a24c3d</dark_colour>
+                <banner>sens_carr/sensib9_i.png</banner>
+                <doc_dl>xid-801502_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="core_french">
+        <levels>
+            <level id="1">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_1.xml</out_ind>
+                    <fondements>fondements_core_french.html</fondements>
+                    <matiere>matiere_core_french.html</matiere>
+                    <lexique>core_french_1_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 1</res_class_id>
+                <curric_name>Core French 1</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_1.png</banner>
+                <doc_dl>xid-181674_1</doc_dl>
+            </level>
+            <level id="2">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_2.xml</out_ind>
+                    <fondements>fondements_core_french.html</fondements>
+                    <matiere>matiere_core_french.html</matiere>
+                    <lexique>core_french_2_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 2</res_class_id>
+                <curric_name>Core French 2</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_2.png</banner>
+                <doc_dl>xid-181675_1</doc_dl>
+            </level>
+            <level id="3">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_3.xml</out_ind>
+                    <fondements>fondements_core_french.html</fondements>
+                    <matiere>matiere_core_french.html</matiere>
+                    <lexique>core_french_3_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 3</res_class_id>
+                <curric_name>Core French 3</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_3.png</banner>
+                <doc_dl>xid-181676_1</doc_dl>
+            </level>
+            <level id="4">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_4.xml</out_ind>
+                    <fondements>fondements_core_french.html</fondements>
+                    <matiere>matiere_core_french.html</matiere>
+                    <lexique>core_french_4_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 4</res_class_id>
+                <curric_name>Core French 4</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_4.png</banner>
+                <doc_dl>xid-181677_1</doc_dl>
+            </level>
+            <level id="5">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_5.xml</out_ind>
+                    <fondements>fondements_core_french.html</fondements>
+                    <matiere>matiere_core_french.html</matiere>
+                    <lexique>core_french_5_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 5</res_class_id>
+                <curric_name>Core French 5</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_5.png</banner>
+                <doc_dl>xid-181678_1</doc_dl>
+            </level>
+            <level id="6">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_6.xml</out_ind>
+                    <fondements>fondements_core_french_6to9.html</fondements>
+                    <matiere>matiere_core_french_6to9.html</matiere>
+                    <lexique>core_french_6_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 6</res_class_id>
+                <curric_name>Core French 6</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_6.png</banner>
+                <doc_dl>xid-199477_1</doc_dl>
+            </level>
+            <level id="7">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_7.xml</out_ind>
+                    <fondements>fondements_core_french_6to9.html</fondements>
+                    <matiere>matiere_core_french_6to9.html</matiere>
+                    <lexique>core_french_7_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 7</res_class_id>
+                <curric_name>Core French 7</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_7.png</banner>
+                <doc_dl>xid-199478_1</doc_dl>
+            </level>
+            <level id="8">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_8.xml</out_ind>
+                    <fondements>fondements_core_french_6to9.html</fondements>
+                    <matiere>matiere_core_french_6to9.html</matiere>
+                    <lexique>core_french_8_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 8</res_class_id>
+                <curric_name>Core French 8</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_8.png</banner>
+                <doc_dl>xid-199479_1</doc_dl>
+            </level>
+            <level id="9">
+                <dir_path>/library/Curriculum Website/Core French/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>core_french_9.xml</out_ind>
+                    <fondements>fondements_core_french_6to9.html</fondements>
+                    <matiere>matiere_core_french_6to9.html</matiere>
+                    <lexique>core_french_9_lex.xml</lexique>
+                </tabs>
+                <res_class_id>core french 9</res_class_id>
+                <curric_name>Core French 9</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#008164</dark_colour>
+                <banner>corefrench/Core_french_9.png</banner>
+                <doc_dl>xid-199480_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="kindergarten">
+        <levels>
+            <level id="k">
+                <dir_path>/library/Curriculum Website/Kindergarten/Curricula/</dir_path>
+                <tabs>
+                    <out_ind>kindergarten.xml</out_ind>
+                </tabs>
+                <res_class_id>kindergarten</res_class_id>
+                <curric_name>Kindergarten</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#FBB162</dark_colour>
+                <banner>kindergarten/Kindergarten.png</banner>
+                <doc_dl>xid-181674_1</doc_dl>
+            </level>
+        </levels>
+    </subject>
+    <subject name="prekindergarten">
+        <levels>
+            <level id="prek">
+                <dir_path>/library/Curriculum Website/Kindergarten/Curricula/</dir_path>
+                <tabs>
+                </tabs>
+                <res_class_id>prekindergarten</res_class_id>
+                <curric_name>Prekindergarten</curric_name>
+                <light_colour>#e6f3f0</light_colour>
+                <dark_colour>#FBB162</dark_colour>                
+            </level>
+        </levels>
+    </subject>
+</subjects>
