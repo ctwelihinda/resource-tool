@@ -3,26 +3,18 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/Downloads/bb-bbxythos.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/Downloads/bb-cms-admin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/Downloads/bb-platform.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/Downloads/bb-qti.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/Downloads/bb-taglibs.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/Downloads/xsscore.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Chamath/org-apache-commons-codec.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Chamath/j2ee-1.4.jar">
-		<attributes>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-bbxythos.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-cms-admin.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-platform.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-qti.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-taglibs.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/j2ee-1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/org-apache-commons-codec.jar"/>
+	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/xsscore.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
