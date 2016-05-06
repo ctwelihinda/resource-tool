@@ -8,13 +8,13 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-bbxythos.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-cms-admin.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-platform.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-qti.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/bb-taglibs.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/j2ee-1.4.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/org-apache-commons-codec.jar"/>
-	<classpathentry kind="lib" path="/Users/WBCcourses/Desktop/Eclipse Workspace/resource-tool/xsscore.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/bb-bbxythos.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/bb-cms-admin.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/bb-platform.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/bb-qti.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/bb-taglibs.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/j2ee-1.4.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/org-apache-commons-codec.jar"/>
+	<classpathentry kind="lib" path="/Users/DevAccount/Documents/workspace/resource-tool/xsscore.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

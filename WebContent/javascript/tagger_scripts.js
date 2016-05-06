@@ -297,7 +297,7 @@ $(document).ready(function() {
     $('#add_tracking_info_tag_submit').on('click', function() {
     	alert("Hello");
     	//alert($("#tracking_info_tags tbody"));
-    	add_tag("new", $("#add_tracking_info_tag_id"), $("#tracking_info_tags tbody"));
+    	add_tag ("new", $("#add_tracking_info_tag_id"), $("#tracking_info_tags tbody"));
 
     });
 
