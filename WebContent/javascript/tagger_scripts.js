@@ -300,6 +300,10 @@ $(document).ready(function() {
     	add_tag ("new", $("#add_tracking_info_tag_id"), $("#tracking_info_tags tbody"));
 
     });
+    
+    $('#add_status_tag_submit').on('click', function(){
+    	add_tag ("existing", $("#add_status_tag_id"), $("#tracking_info_tags tbody"));
+    });
 
 /////////////////////////////////////////
 // stf borrowing

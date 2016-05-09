@@ -70,7 +70,8 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
             <script src="javascript/jquery.ui.position.min.js"></script>
             <script src="javascript/jquery.ui.menu.min.js"></script>
             <script src="javascript/jquery.ui.autocomplete.min.js"></script>
-            <script src="javascript/tagger_scripts.js"></script>
+           <!--  <script src="javascript/tagger_scripts.js?"></script> -->
+           	<script src="https://bblearndev.merlin.mb.ca/bbcswebdav/library/Curriculum%20Website/New%20Resource%20Search/javascript/tagger_scripts.js"></script>
             <script type="text/javascript">
                 $(document).ready(function() {
                    /////////////////////////////////////////
@@ -590,7 +591,16 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
                     <div class="tagger_section_instructions">
                         This is section is for adding information regarding the physical location of a Resource.
                     </div>
-                    <div id="tracking_info_tags_container" class="tags_container">
+                    <div id="tracking_tags_container" class="tags_container">
+                       <%
+                            ArrayList<Tag> all_tracking_tags = new ArrayList<Tag>();
+                            all_tracking_tags.addAll(tags.get("sendRec"));
+                            all_tracking_tags.addAll(tags.get("status"));
+                           // all_medium_format_tags.addAll(tags.get("language"));
+                            //all_medium_format_tags.addAll(tags.get("genre"));
+                        %>
+                        <% request.setAttribute("table_list", all_tracking_tags); %>
+                        <% request.setAttribute("permissions", permissions); %>
                         <% request.setAttribute("table_list", tags.get("tracking_info")); %>
                         <% request.setAttribute("permissions", permissions); %>
                         <jsp:include page="partials/generate_tag_table.jsp">
@@ -600,13 +610,31 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
                         </jsp:include>
                     </div>
                     <% if (permissions.getPermissionLevel("tracking_info") >= TaggerPermissionsManager.READ_WRITE)
-                    {    
+                    {    //System.out.println("Inside if of tracking info");
                     %>
-                        <div class="form_wrapper">
-                            <form name="add_tracking_info_tag" id="add_tracking_info_tag_id">
+                    <div class="horizontal_form_wrapper">
+                            <form name="add_status_tag" id="add_status_tag_id">
+                                <span class="form_text">Status:</span><br/>
+                                <select name="tag_id">
+                                    <%
+                                        for (Tag current : TagLoader.loadByTypeName("Status"))
+                                        {
+                                            %><option value="<%=Integer.toString(current.getDBID())%>"><%=current.getValue()%></option><%
+                                        }
+                                    %>
+                                </select>
+                                <input type="hidden" name="resource_id" value="<%=this_resource_id%>"/>
+                                <button type="button" id="add_status_tag_submit">ADD TAG</button>
+                            </form>
+                            
+                        </div>
+                        
+                        <div class="horizontal_form_wrapper">
+                            <form name="add_sendRec_tag" id="add_sendRec_tag_id">
+                            	<span class="form_text"></span><br/>
                             	<select name="tag_type">
                                     <%
-                                        for (String current : tag_option_names.get("tracking_info"))
+                                        for (String current : tag_option_names.get("sendRec"))
                                         {
                                             %><option value="<%=current%>"><%=current%></option><%
                                         }
@@ -615,10 +643,11 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
                                 <input type="text" name="tag_value"/>
                                 <!--  <input type="hidden" name="tag_type" value="Tracking Info"/> -->
                                 <input type="hidden" name="resource_id" value="<%=this_resource_id%>"/>
-                                <button type="button" id="add_tracking_info_tag_submit">ADD TAG</button>
+                                <button type="button" id="add_sendRec_tag_submit">ADD TAG</button>
                             </form>
                             
                         </div>
+                         <div style="clear: both"></div>
                     <% } %>
                     
                 </div>

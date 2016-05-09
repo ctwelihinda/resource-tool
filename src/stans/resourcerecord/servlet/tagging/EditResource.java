@@ -148,11 +148,12 @@ public class EditResource extends HttpServlet {
         ))
     );
     tag_option_names.put(
-    		"tracking_info",
+    		"sendRec",
     		
     		new ArrayList<String>(Arrays.asList(
     			
-    			"Tracking Info"
+    			"Recieved From",
+    			"Sent To"
     		))
     );
 
@@ -209,6 +210,19 @@ public class EditResource extends HttpServlet {
             "Resource List Classification"
         ))
     );
+    tag_option_names.put(
+            "status",
+            new ArrayList<String>(Arrays.asList(
+                "Intent Recieved",
+                "Requested",
+                "Recieved",
+                "Returned",
+                "Recommended for Approval",
+                "Denied Approval",
+                "Ineligle"
+                
+            ))
+        );
 
     
     TagType grade_type = TagTypeLoader.loadByType("Grade");
@@ -261,6 +275,10 @@ public class EditResource extends HttpServlet {
         TagLoader.loadByTypeName("Format")
     );
     tag_options.put(
+    		"status",
+    		TagLoader.loadByTypeName("Status")
+    );
+    tag_options.put(
         "language",
         TagLoader.loadByTypeName("Language")
     );
@@ -279,6 +297,8 @@ public class EditResource extends HttpServlet {
     tags.put(   "date",			new ArrayList<Tag>());
     tags.put(   "other",		new ArrayList<Tag>());
     tags.put(   "tracking_info",new ArrayList<Tag>());
+    tags.put(   "sendRec",		new ArrayList<Tag>());
+    tags.put(   "status",		new ArrayList<Tag>());
     tags.put(   "stf_borrow",   new ArrayList<Tag>());
     tags.put(   "people",		new ArrayList<Tag>());
     tags.put(   "medium",		new ArrayList<Tag>());
@@ -299,9 +319,11 @@ public class EditResource extends HttpServlet {
         else if (t.getType().equals("STF Link"))                            { tags.get("stf_borrow").add(t); }
         else if (t.getType().equals("Streaming License"))					{ tags.get("licenses").add(t); }
         else if (t.getType().equals("Tag Group"))                           { tags.get("groups").add(t); }
+        else if (t.getType().equals("sendRec"))								{ tags.get("sendRec").add(t);}
+        else if (t.getType().equals("Status"))								{ tags.get("status").add(t); }
         else if (tag_option_names.get("other").contains(t.getType()))       { tags.get("other").add(t); }
         else if (tag_option_names.get("date").contains(t.getType()))        { tags.get("date").add(t); }
-        else if	(tag_option_names.get("tracking_info").contains(t.getType())){tags.get("tracking_info").add(t);}
+        //else if	(tag_option_names.get("tracking_info").contains(t.getType())){tags.get("tracking_info").add(t);}
         else if (tag_option_names.get("title").contains(t.getType()))       { tags.get("title").add(t); }
         else if (tag_option_names.get("content").contains(t.getType()))     { tags.get("content").add(t); }
         else if (
