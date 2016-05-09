@@ -294,10 +294,9 @@ $(document).ready(function() {
     
 ///////////////////////////////////////////////////
     //Tracking info
-    $('#add_tracking_info_tag_submit').on('click', function() {
-    	alert("Hello");
+    $('#add_sendRec_tag_submit').on('click', function() {
     	//alert($("#tracking_info_tags tbody"));
-    	add_tag ("new", $("#add_tracking_info_tag_id"), $("#tracking_info_tags tbody"));
+    	add_tag ("new", $("#add_sendRec_tag_id"), $("#tracking_info_tags tbody"));
 
     });
     

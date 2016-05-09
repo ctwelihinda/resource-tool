@@ -601,7 +601,7 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
                         %>
                         <% request.setAttribute("table_list", all_tracking_tags); %>
                         <% request.setAttribute("permissions", permissions); %>
-                        <% request.setAttribute("table_list", tags.get("tracking_info")); %>
+
                         <% request.setAttribute("permissions", permissions); %>
                         <jsp:include page="partials/generate_tag_table.jsp">
                             <jsp:param name="table_id" value="tracking_info_tags" />

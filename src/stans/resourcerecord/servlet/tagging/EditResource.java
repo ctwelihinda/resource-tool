@@ -152,7 +152,7 @@ public class EditResource extends HttpServlet {
     		
     		new ArrayList<String>(Arrays.asList(
     			
-    			"Recieved From",
+    			"Received From",
     			"Sent To"
     		))
     );
@@ -199,7 +199,8 @@ public class EditResource extends HttpServlet {
             "Running Time",
             "Number of Tracks",
             "Length",
-            "Region Code"
+            "Region Code",
+            "Number of Copies"
         ))
     );
     tag_option_names.put(
@@ -319,8 +320,9 @@ public class EditResource extends HttpServlet {
         else if (t.getType().equals("STF Link"))                            { tags.get("stf_borrow").add(t); }
         else if (t.getType().equals("Streaming License"))					{ tags.get("licenses").add(t); }
         else if (t.getType().equals("Tag Group"))                           { tags.get("groups").add(t); }
-        else if (t.getType().equals("sendRec"))								{ tags.get("sendRec").add(t);}
+        else if (tag_option_names.get("sendRec").contains(t.getType()))		{ tags.get("sendRec").add(t);}
         else if (t.getType().equals("Status"))								{ tags.get("status").add(t); }
+      
         else if (tag_option_names.get("other").contains(t.getType()))       { tags.get("other").add(t); }
         else if (tag_option_names.get("date").contains(t.getType()))        { tags.get("date").add(t); }
         //else if	(tag_option_names.get("tracking_info").contains(t.getType())){tags.get("tracking_info").add(t);}
