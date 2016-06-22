@@ -42,7 +42,7 @@ public class SearchResources extends HttpServlet {
 
     public enum SearchType {
 
-        TAG, RESOURCE, SURVEY, CURRICULUM_RESOURCE, RECENT, TEST, FLAG, RECOMMENDATION, RESOURCETEXT, ADVANCED
+        TAG, RESOURCE, SURVEY, CURRICULUM_RESOURCE, RECENT, TEST, FLAG, RECOMMENDATION, RESOURCETEXT, ADVANCED, DATE_RANGE
     }
 
     /**
@@ -58,7 +58,8 @@ public class SearchResources extends HttpServlet {
 
         SearchType searchType = SearchType.valueOf(request.getParameter("searchType").toUpperCase());
         ArrayList<Resource> searchResults = new ArrayList<Resource>();
-
+        //System.out.println("Hello from SearchResources");
+        //System.out.println(request.getParameter("dateType"));
         
         switch (searchType) {
             case TAG:
@@ -94,6 +95,10 @@ public class SearchResources extends HttpServlet {
                 // and return the results
                 // todo
                 break;
+            case DATE_RANGE:
+            	//System.out.println("hello from Date_Range");
+            	searchResults = dateRangeSearch(request);
+            	break;
         }
 
         //make sure results are unique
@@ -130,13 +135,15 @@ public class SearchResources extends HttpServlet {
             allowed_tagtypes.add("Level");
             
             ArrayList<Resource> temp_searchResults = new ArrayList<Resource>();
-            //System.out.println("Search of type " + searchType.toString() + " returned the following " + searchResults.size() + "results: ");
+            System.out.println("Search of type " + searchType.toString() + " returned the following " + searchResults.size() + " results: ");
             for (Resource r : searchResults)
             {
                 //System.out.println("-" + r.getRNumber());
                 //if ((r.getParent() == null) && (r.getFinalRecommendation() == 1))
+            	//System.out.println("Final Rec : " + r.getFinalRecommendation());
                 if (r.getFinalRecommendation() == 1)
                 {
+                	
                     temp_searchResults.add(r);
                     
                     for (Tag t: r.getTags())
@@ -158,7 +165,7 @@ public class SearchResources extends HttpServlet {
 
             request.setAttribute("searchFilters", searchFilters);
         }
-        
+        System.out.println("Size of results " + searchResults.size());
         request.setAttribute("searchResults", searchResults);
         
         if (searchType == SearchType.CURRICULUM_RESOURCE)
@@ -182,6 +189,64 @@ public class SearchResources extends HttpServlet {
             return;
         }
 
+    }
+    
+    private String reformatDate(String date){
+    	String formatDate = "";
+    	if(date != null || !date.equals("")){
+    		String[] components = date.split("/");
+    		System.out.println(components.toString());
+    		formatDate = components[2] + '-' + components[0] + '-' + components[1];
+    	}
+    	//formatDate = components[2]  + components[1] +  components[0];
+    	return formatDate;
+    }
+    
+    private ArrayList<Resource> dateRangeSearch(HttpServletRequest request){
+    	String tagTypeName = request.getParameter("tagTypeName");
+    	String startDate  = request.getParameter("bbDateTimePicker_start_date");
+    	String endDate = request.getParameter("bbDateTimePicker_end_date");
+    	
+    	String tagTypeValue1 = "";//reformatDate(request.getParameter("bbDateTimePicker_start_date"));
+    	String tagTypeValue2 = "";// reformatDate(request.getParameter("bbDateTimePicker_end_date"));
+    	int isAfter = 0;
+    	int isBefore = 0;
+    	String tagTypeValue = "";
+    	String operator = null;
+    	String after = request.getParameter("bbDateTimePicker_start_checkbox");
+    	String before = request.getParameter("bbDateTimePicker_end_checkbox");
+    	
+    	
+    	if(after != null){
+    		isAfter = Integer.parseInt(after);
+    		tagTypeValue1 = reformatDate(startDate);
+    	}
+    	if(before != null){
+    		isBefore = Integer.parseInt(before);
+    		tagTypeValue2 = reformatDate(startDate);
+    		
+    	}
+
+    	if((isAfter == 1 ) && (isBefore == 1)){
+    		operator = "BETWEEN";
+    		tagTypeValue = tagTypeValue1 + "\n" + tagTypeValue2;
+    	}else if (isAfter == 1 ){
+    		operator = "AFTER";
+    		tagTypeValue = tagTypeValue1;
+    	}else if (isBefore == 1){
+    		operator = "BEFORE";
+    		tagTypeValue = tagTypeValue2;
+    	}
+    	
+        System.out.println("Performing Tag Search");
+        System.out.println("tagTypeName:  " + tagTypeName);
+        System.out.println("operator:     " + operator);
+        System.out.println("tagTypeValue: " + tagTypeValue);
+        System.out.println("");
+        
+    	
+    	return ResourceLoader.loadByTags( TagLoader.loadByTagTypeNameAndTagValueAndOperator(
+    			tagTypeName, tagTypeValue, Enumerators.BBComparisonOperator.valueOf( operator)));
     }
 
     private ArrayList<Resource> tagSearch(HttpServletRequest request) {
@@ -338,7 +403,7 @@ public class SearchResources extends HttpServlet {
 				{ tags_to_search.addAll(TagLoader.loadByTagTypeNameAndTagValueAndOperator("Subject", subject, BBComparisonOperator.EQUALS)); }
 				tags_to_search.addAll(TagLoader.loadByTagTypeNameAndTagValueAndOperator("Level", this_level, BBComparisonOperator.EQUALS));
 				tags_to_search.addAll(TagLoader.loadByTagTypeNameAndTagValueAndOperator("Grade", this_level, BBComparisonOperator.EQUALS));
-
+				System.out.println("subject + grade: " + subject + " " + this_level);
 				if (fran_or_imm.equals("fran"))
 				{ tags_to_search.addAll(TagLoader.loadByTagTypeNameAndTagValueAndOperator("Program", "Fransaskois", BBComparisonOperator.EQUALS)); }
 				if (fran_or_imm.equals("imm"))

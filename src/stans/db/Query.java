@@ -7,12 +7,14 @@ package stans.db;
 import blackboard.db.BbDatabase;
 import blackboard.db.ConnectionManager;
 import blackboard.db.ConnectionNotAvailableException;
+
 import java.sql.Clob;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -454,7 +456,8 @@ public class Query {
                 for (String arg : arguments)
                 {
                     insertQuery.setString(counter, arg.replace("''", "'")); // find doesn't match '' to ', but '' is needed for inserts. Many servlets will have '' passed to them, though
-                    //System.out.println("Arg " + Integer.toString(counter) + ": " + arg);
+                 
+                   // System.out.println("Arg " + Integer.toString(counter) + ": " + arg);
                     counter++;
                 }
             }
@@ -463,7 +466,7 @@ public class Query {
             //System.out.println("***The results were: ");
             while(resultset.next()){
                 results.add(resultset.getInt(1));
-               // System.out.println(Integer.toString(resultset.getInt(1)));
+                //System.out.println(Integer.toString(resultset.getInt(1)));
             }
             
             insertQuery.close();
@@ -625,9 +628,22 @@ public class Query {
             case BLANK:
                 result_ids = Query.find(tablename, column + " IS NULL", args);
                 break;
+            case BETWEEN:
+            	String[] values = value.split("\n");
+            	//args = new ArrayList<String>(Arrays.asList(values[0], values[1]));
+            	result_ids = Query.find(tablename, column + " BETWEEN '" + values[0] + "' AND '" + values[1] + "'", args);
+            	break;
+            case AFTER:
+            	result_ids = Query.find(tablename, column + " > '" + value  +  "'", args);
+            	break;
+            case BEFORE:
+            	result_ids = Query.find(tablename, column + " < '" + value + "'", args);
+            	break;
         }
         return result_ids;
     }
+    
+    
     
     public static ArrayList<String> freefind(String query)
     {

@@ -41,10 +41,12 @@
                 Timestamp curr_time = Query.getCurrentTime();
                 Timestamp since_time = new Timestamp(curr_time.getTime() - delta_ms);
 
-                String tag_constraints = "created_at >= TO_TIMESTAMP('" + since_time.toString() + "','YYYY-MM-DD HH24:MI:SS.FF6')";
-                String text_constraints = "created_at >= TO_TIMESTAMP('" + since_time.toString() + "','YYYY-MM-DD HH24:MI:SS.FF6')";
-                String ua_constraints = "updated_at >= TO_TIMESTAMP('" + since_time.toString() + "','YYYY-MM-DD HH24:MI:SS.FF6')";
-
+               // String tag_constraints = "created_at >= TO_TIMESTAMP('" + since_time.toString() + "','YYYY-MM-DD HH24:MI:SS.FF6')";
+                String tag_constraints = "created_at >= CAST(CAST('" + since_time.toString() + "' as varchar(max)) as datetime)";
+                //String text_constraints = "created_at >= TO_TIMESTAMP('" + since_time.toString() + "','YYYY-MM-DD HH24:MI:SS.FF6')";
+                String text_constraints = "created_at >= CAST(CAST('" + since_time.toString() + "' as varchar(max)) as datetime)";
+                //String ua_constraints = "updated_at >= TO_TIMESTAMP('" + since_time.toString() + "','YYYY-MM-DD HH24:MI:SS.FF6')";
+    			String ua_constraints = "updated_at >= CAST(CAST('" + since_time.toString() + "' as varchar(max)) as datetime)";
                 %><table><%
                 for (Integer join_id : Query.find("moe_resource_tag", tag_constraints, null))
                 {

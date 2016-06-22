@@ -20,6 +20,8 @@
 <%@page import="blackboard.data.user.User"%>
 <%@page import="blackboard.persist.user.impl.UserDbLoaderImpl"%>
 <%@page import="blackboard.platform.context.ContextManagerFactory"%>
+<%@page import="java.util.Calendar" %>
+<%@page import="blackboard.servlet.util.DatePickerUtil" %>
 
 <%@ taglib uri="/bbNG" prefix="bbNG" %>
 <%@ taglib uri="/bbUI" prefix="bbUI" %>
@@ -34,7 +36,8 @@
         request.setAttribute("searchResults", searchResults);
     }
     EasyUser me = new EasyUser(request);
-
+	
+    String[] dateTypes = { "Review Date", "Order Date", "Received Date", "Copyright Date", "Expiry Date", "Date Recorded"};
 
 %>
 <link rel="stylesheet" type="text/css" href="css/dashboard_styles.css" />
@@ -149,6 +152,67 @@
                 </bbNG:searchBar>
                 <input type="hidden" name="searchType" value="resourcetext" />    
             </form>
+        </div>
+        <br style="clear:both;"/> <br/>
+        <div>
+        <form action="SearchResources">
+              <bbNG:dataCollection>
+               	<bbNG:step title="Search By Date Range:">
+                	<bbNG:dataElement>
+                	<bbNG:selectElement name= "tagTypeName">
+                	<%for(int i = 0; i < dateTypes.length; i++){ %>
+                		<%if(i == 0){ %>
+                		<bbNG:selectOptionElement value="<%= dateTypes[i] %>" optionLabel = "<%=dateTypes[i] %>" isSelected = "true"/>
+                		<%} %>
+                		<bbNG:selectOptionElement value="<%= dateTypes[i] %>" optionLabel = "<%=dateTypes[i] %>"/>
+
+                	<%} %>
+                	</bbNG:selectElement>
+                	
+                	
+
+					<% Calendar date = Calendar.getInstance();
+
+					
+					
+					Calendar endDate = Calendar.getInstance();
+					
+					
+					%>
+						<bbNG:dateRangePicker startDateTime = "<%=date%>" endDateTime = "<%=endDate%>"/>
+                	</bbNG:dataElement>
+                </bbNG:step>
+               	<bbNG:stepSubmit title= "dateSubmit" showCancelButton= "false">
+               		
+
+               		<bbNG:stepSubmitButton label= "Search" primary = "true"
+               />
+               	</bbNG:stepSubmit>
+            </bbNG:dataCollection>
+            <!--  <br/>
+                <b>Search by Date Range </b><br/>
+      
+            <form action="SearchResources">
+                <bbNG:searchBar            
+                    searchLabel=":"
+                    selectName="startDateFieldName"
+                    textfieldName="resourceTextFieldValue"
+                    operatorName="operator"
+                    operatorValue="Between"
+                    
+                    renderBodyContentInLine="false">
+                    <bbNG:searchOption label="Review Date" value="Review Date" />            
+                    <bbNG:searchOption label="Copyright Date" value="Copyright Date" />            
+                    <bbNG:searchOption label="Order Date" value="Order Date" />            
+                    <bbNG:searchOption label="Recieved Date" value="Recieved Date" />                            
+                </bbNG:searchBar>
+
+
+                <input type="hidden" name="searchType" value="dates" />    
+            </form>
+            -->
+            <input type="hidden" name="searchType" value="date_range"/>
+		</form>
         </div>
 
 
@@ -320,9 +384,9 @@
             <a target="_blank" class="genericButton" href="<%=r.getTest().shortcuts.getEditOptionsPath()%>">Options</a>
             <a target="_blank" class="genericButton" href="<%=r.getTest().shortcuts.getAdaptiveReleasePath()%>">A.R.</a>       
             <% } else { %>
-            <a target="_blank" href="/webapps/assessment/do/authoring/viewAssessmentManager?assessmentType=Test&course_id=_2868_1"><i>Create Survey</i></a>
+            <a target="_blank" href="/webapps/assessment/do/authoring/viewAssessmentManager?assessmentType=Test&course_id=_314_1"><i>Create Survey</i></a>
             &nbsp;|&nbsp;
-            <a target="_blank" href="/webapps/assessment/do/content/assessment?action=ADD&course_id=_2868_1&content_id=_75190_1&assessmentType=Test"><i>Deploy Survey</i></a>
+            <a target="_blank" href="/webapps/assessment/do/content/assessment?action=ADD&course_id=_314_1&content_id=_196749_1&assessmentType=Test"><i>Deploy Survey</i></a>
             <%}%>
         </bbNG:listElement>
         <bbNG:listElement label="Survey Results" name="surveyresults">

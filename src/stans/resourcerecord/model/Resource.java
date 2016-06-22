@@ -198,7 +198,7 @@ public class Resource implements Comparable<Resource> {
     public EasyTest getTest() throws PersistenceException {
         if (test == null) {
             try {
-                test = new EasyTest(new EasyCourse("MOE_resource_evaluation"), getRNumber());
+                test = new EasyTest(new EasyCourse("STANS1000"), getRNumber());
             } catch (Exception e) {
                 //todo write error to log
                 test = null;

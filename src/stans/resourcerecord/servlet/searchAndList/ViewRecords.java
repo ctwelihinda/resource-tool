@@ -55,8 +55,9 @@ public class ViewRecords extends HttpServlet {
             for (int i=0; i<id_params.length; i++)
             {
                 if (ValidationHelpers.isPositiveInteger(id_params[i]))    { 
-                		resource_records[i] = new ResourceRecord(new Resource(Integer.parseInt(id_params[i])));
-                		//resource_records[i] = new ResourceRecord(ResourceLoader.loadByRNumber(id_params[i]));
+                		//resource_records[i] = new ResourceRecord(new Resource(Integer.parseInt(id_params[i])));
+                		resource_records[i] = new ResourceRecord(ResourceLoader.loadByDBID(Integer.parseInt(id_params[i])));
+                				
                 	}
             }
 

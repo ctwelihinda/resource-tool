@@ -64,11 +64,14 @@
         return;
     }
     // also check if the user has the correct role(s) to be doing this, and give them a message if not
+    boolean isAdminSearch = false;
     try
     {
         EasyUser curr_easyuser = new EasyUser(request);
         if (!curr_easyuser.shortcuts.hasRoleId("resource_tool_full_admin"))
-        { HttpAuthManager.sendAccessDeniedRedirect(request, response); }
+        { HttpAuthManager.sendAccessDeniedRedirect(request, response); 
+        	isAdminSearch = true;
+        }
     }
     catch (Exception e)
     {}
@@ -78,10 +81,11 @@
                          ////////////////////
 
     ArrayList<Resource> search_result_resources = (ArrayList<Resource>) request.getAttribute("searchResults");
+    
     if (search_result_resources == null) {
         search_result_resources = new ArrayList<Resource>();
     }
-    
+    //System.out.println("Inside jsp curric " + search_result_resources.size());
     ArrayList<CurriculumSearchResult> search_results = new ArrayList<CurriculumSearchResult>();
     
     String subjects_string = "";
@@ -244,7 +248,8 @@
     }
 	cache_file_name = cache_file_name.toLowerCase();
 
-// Open outcome list    
+// Open outcome list   
+	//System.out.println("Before XML stuff");
     String outcomelist_filename = "outcomes_list_en.xml";
     String querymanifest_filename = "query_manifest.xml";
     ByteArrayOutputStream outcomelist_os = new ByteArrayOutputStream();
@@ -264,6 +269,7 @@
             open_file_context.commit();
         }
     }
+    //System.out.println("After try-catch");
 
     ByteArrayInputStream outcomelist_is = new ByteArrayInputStream(outcomelist_os.toByteArray());
     ByteArrayInputStream querymanifest_is = new ByteArrayInputStream(querymanifest_os.toByteArray());
@@ -271,6 +277,7 @@
     XMLReader querymanifest_xml = new XMLReader();
     outcomelist_xml.setStream(outcomelist_is);
     querymanifest_xml.setStream(querymanifest_is);
+    //System.out.println("After setStream");
 
     ArrayList<String> area_filters = new ArrayList<String>();
     HashMap<String,Boolean> allowed_area_tags = new HashMap();
@@ -544,12 +551,13 @@
             ArrayList<CurriculumSearchResult> addl_resources = new ArrayList<CurriculumSearchResult>();
             ArrayList<CurriculumSearchResult> oum_resources = new ArrayList<CurriculumSearchResult>();
             Integer list_count = search_result_resources.size();
+           // System.out.println("Before loop : " + list_count);
             for (Resource r : search_result_resources) {
                 // add filterable tag values to class names
                 
                 CurriculumSearchResult this_result = new CurriculumSearchResult(r, allowed_tagtypes, ConstantLists.mediumformatShortlist, display_language);
                 this_result.show_this_resource = true;
-                
+                //System.out.println("Inside search_result_resources loop");
                 if ((r.hideIfChild()) && (r.getParent() != null))
                 {
                     this_result.show_this_resource = false;
@@ -559,13 +567,16 @@
                 if (this_result.show_this_resource)
                 {
                     if (this_result.is_core)
-                    { core_resources.add(this_result); }
+                    { core_resources.add(this_result);
+                    //System.out.println("added to core resources");
+                    }
                     else if (this_result.is_support)
                     { oum_resources.add(this_result); }
                     else
                     { addl_resources.add(this_result); }
                 }
             }
+            //System.out.println("After loop : " + list_count);
             Collections.sort(core_resources);
             Collections.sort(addl_resources);
             Collections.sort(oum_resources);
