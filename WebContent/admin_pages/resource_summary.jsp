@@ -5,7 +5,7 @@
 --%>
 
 <%@page import="java.sql.Timestamp"%>
-<%--<%@page import="edu.sk.resourcerecord.query.Query"%> --%>
+<%@page import="stans.db.Query"%>
 <%@page import="stans.resourcerecord.model.Resource"%>
 <%@page import="stans.resourcerecord.dao.ResourceLoader"%>
 <%@page import="blackboard.platform.security.authentication.HttpAuthManager"%>
@@ -56,25 +56,26 @@
             if (r_number != null)
             {
                 Resource r = ResourceLoader.loadByRNumber(r_number);
+              
                 int db_id = r.getDBID();
-                
-                %><ul><%--
-                   	%><li>pk1: <%=(String)Query.select("moe_resource", "pk1", db_id)%></li><%
+        
+                %><ul><%
+                System.out.println("before first tag");	%><li>pk1: <%=(String)Query.select("moe_resource", "pk1", db_id)%></li><% 
                     %><li>entry_id: <%=(String)Query.select("moe_resource", "entry_id", db_id)%></li><%
                     %><li>created_by: <%=(String)Query.select("moe_resource", "created_by", db_id)%></li><%
                     %><li>created_at: <%=((Timestamp)Query.select("moe_resource", "created_at", db_id)).toString()%></li><%
                     %><li>go_live_date: <%=(String)Query.select("moe_resource", "go_live_date", db_id)%></li><%
                     %><li>parent_id: <%=(Integer)Query.select("moe_resource", "parent_id", db_id)%></li><%
-                    %><li>recommendation: <%=(String)Query.select("moe_resource", "recommendation", db_id)%></li><%
-                    %><li>out_of_print: <%=(String)Query.select("moe_resource", "out_of_print", db_id)%></li><%
-                    %><li>dont_show_if_child: <%=(String)Query.select("moe_resource", "dont_show_if_child", db_id)%></li><%
-                    %><li>is_core: <%=(String)Query.select("moe_resource", "is_core", db_id)%></li><%
-                    %><li>is_rover: <%=(String)Query.select("moe_resource", "is_rover", db_id)%></li><%
+                    %><li>recommendation: <%=(Integer)Query.select("moe_resource", "recommendation", db_id)%></li><%
+                    %><li>out_of_print: <%=(Integer)Query.select("moe_resource", "out_of_print", db_id)%></li><%
+                    %><li>dont_show_if_child: <%=(Integer)Query.select("moe_resource", "dont_show_if_child", db_id)%></li><%
+                    %><li>is_core: <%=(Integer)Query.select("moe_resource", "is_core", db_id)%></li><%
+                    %><li>is_rover: <%=(Integer)Query.select("moe_resource", "is_rover", db_id)%></li><%
                     %><li>quick_title: <%=(String)Query.select("moe_resource", "quick_title", db_id)%></li><%
                     %><li>quick_description: <%=(String)Query.select("moe_resource", "quick_description", db_id)%></li><%
                     %><li>quick_info: <%=(String)Query.select("moe_resource", "quick_info", db_id)%></li><%
                     %><li>quick_pic: <%=(String)Query.select("moe_resource", "quick_pic", db_id)%></li><%
-                --%></ul><%
+                %></ul><%
             }
         %>
     </body>

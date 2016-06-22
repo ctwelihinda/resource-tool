@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package stans.resourcerecord.model;
+import stans.EasyUser;
 
 import com.xythos.common.api.XythosException;
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class CurriculumSearchResult implements Comparable<CurriculumSearchResult
     public boolean is_support;
     public boolean is_outofprint;
     
-    private String default_image_path = "http://edonline.sk.ca/bbcswebdav/library/Curriculum%20Website/Common%20Pages/Images/resource_format_icons/generic_icon.jpg";
+    private String default_image_path = "http://bblearndev.merlin.mb.ca/bbcswebdav/library/Curriculum Website/New Resource Search/images/bison.png ";
     private String rover_URL;
     private String watch_text;
     
@@ -354,7 +355,7 @@ public class CurriculumSearchResult implements Comparable<CurriculumSearchResult
         sb.append( "<div class=\"search_result " );
         sb.append( this.HTML_class );
         sb.append( "\">\n" );
-
+        //System.out.println("trying to render html");
 ///////////////////////////////////////////////////////////////////
 // TOP SECTION
             sb.append( "<div class=\"result_top_section\">" );
@@ -366,7 +367,15 @@ public class CurriculumSearchResult implements Comparable<CurriculumSearchResult
                 sb.append( "</div>\n" );
 
                 sb.append( "<div class=\"result_id_field\">" );
-                sb.append( this.r_number );
+             /*   if(true){
+                	sb.append("<a href=\"https://bblearndev.merlin.mb.ca/webapps/moe-resource_tool_final-BBLEARN/EditResource?resource_number=");
+                	sb.append( this.r_number );
+                	sb.append("\">");
+                	sb.append( this.r_number );
+                	sb.append("</a>");
+                } else{ */
+                	sb.append( this.r_number );
+              //  }
                 sb.append( "</div>\n" );
 
                 sb.append( "<div class=\"result_title_block\">" );
@@ -572,7 +581,7 @@ public class CurriculumSearchResult implements Comparable<CurriculumSearchResult
                             sb.append( "<figure>" );
                             sb.append( "<img class=\"result_icon\" alt=\"" );
                             sb.append( filter_name );
-                            sb.append( "\" src=\"https://www.edonline.sk.ca/bbcswebdav/library/Curriculum%20Website/New%20Resource%20Search/images/" );
+                            sb.append( "\" src=\"https://bblearndev.merlin.mb.ca/bbcswebdav/library/Curriculum%20Website/New%20Resource%20Search/images/" );
                             sb.append( ConstantLists.iconImageMap.get(this_set.getKey()) );
                             sb.append( "\" />" );
                             sb.append( "</figure>\n" );

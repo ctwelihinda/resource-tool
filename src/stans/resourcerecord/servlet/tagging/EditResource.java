@@ -231,7 +231,7 @@ public class EditResource extends HttpServlet {
     tag_options.put(
         "grade",
         new ArrayList<Tag>(Arrays.asList(
-            TagLoader.loadByTagTypeAndTagValue("Prekindergarten", level_type),
+           //TagLoader.loadByTagTypeAndTagValue("Prekindergarten", level_type),
             TagLoader.loadByTagTypeAndTagValue("Kindergarten", level_type),
             TagLoader.loadByTagTypeAndTagValue("Maternelle", level_type),
             TagLoader.loadByTagTypeAndTagValue("1", grade_type),
@@ -243,7 +243,10 @@ public class EditResource extends HttpServlet {
             TagLoader.loadByTagTypeAndTagValue("7", grade_type),
             TagLoader.loadByTagTypeAndTagValue("8", grade_type),
             TagLoader.loadByTagTypeAndTagValue("9", grade_type),
-            TagLoader.loadByTagTypeAndTagValue("10", level_type),
+            TagLoader.loadByTagTypeAndTagValue("10", grade_type),
+            TagLoader.loadByTagTypeAndTagValue("11", grade_type),
+            TagLoader.loadByTagTypeAndTagValue("12", grade_type)
+            /*TagLoader.loadByTagTypeAndTagValue("10", level_type),
             TagLoader.loadByTagTypeAndTagValue("A10", level_type),
             TagLoader.loadByTagTypeAndTagValue("B10", level_type),
             TagLoader.loadByTagTypeAndTagValue("20", level_type),
@@ -253,7 +256,7 @@ public class EditResource extends HttpServlet {
             TagLoader.loadByTagTypeAndTagValue("A30", level_type),
             TagLoader.loadByTagTypeAndTagValue("B30", level_type),
             TagLoader.loadByTagTypeAndTagValue("C30", level_type),
-            TagLoader.loadByTagTypeAndTagValue("Example Grade", grade_type)
+            TagLoader.loadByTagTypeAndTagValue("Example Grade", grade_type)*/
         ))
     );
     tag_options.put(

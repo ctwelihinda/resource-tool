@@ -189,9 +189,9 @@ public class TagLoader {
 
         TagType tagType = TagTypeLoader.loadByType(tagTypeName);
         if (tagType != null) {
-            //System.out.println("TagType found: " + tagType.getType());
+           // System.out.println("TagType found: " + tagType.getType());
             result_tags = TagLoader.loadByTagTypeAndTagValueAndOperator(tagType, tagValue, operator);
-            //System.out.println("Tags found: " + result_tags.size());            
+           // System.out.println("Tags found: " + result_tags.size());            
         }
         return result_tags;
     }

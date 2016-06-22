@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<queries>
+	<query>
+		<name>mathematics , 5</name>
+		<filters>
+			<filter>
+				<type>language</type>
+				<value>english</value>
+			</filter>
+			<filter>
+				<type>language</type>
+				<value>french</value>
+			</filter>
+		</filters>
+	</query>
+</queries>

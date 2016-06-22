@@ -181,7 +181,7 @@ public class GenerateResourcePopup extends HttpServlet {
                             if( display_language.equals("fr") ) {
 								subj_grade_sb.append("<tr> <th>M</th> <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th> <th>7</th> <th>8</th> <th>9</th> <th>10</th> <th>20</th> <th>30</th> </tr>");
 							} else {
-								subj_grade_sb.append("<tr><th>PK</th> <th>K</th> <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th> <th>7</th> <th>8</th> <th>9</th> <th>10</th> <th>20</th> <th>30</th> </tr>");
+								subj_grade_sb.append("<tr><th>PK</th> <th>K</th> <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th> <th>7</th> <th>8</th> <th>9</th> <th>10</th> <th>11</th> <th>12</th> </tr>");
 							}
                             subj_grade_sb.append("</thead>");
                             subj_grade_sb.append("<tbody>");
@@ -335,9 +335,9 @@ public class GenerateResourcePopup extends HttpServlet {
                         creator = creator + t.getValue();
                     }
                     if (t.getType().equals("Director"))
-                    {
+                    {	
                         if (!director.equals(""))
-                        { director = director + " "; }
+                        { director = director + " "; } 
                         director = director + t.getValue();
                     }
 
@@ -509,7 +509,7 @@ public class GenerateResourcePopup extends HttpServlet {
                 
                 // COVER IMAGE
                     if (cover_image_path.equals(""))
-                    { cover_image_path = "http://rover.edonline.sk.ca/assets/screenshot_missing.png"; }
+                    { cover_image_path = "http://bblearndev.merlin.mb.ca/bbcswebdav/library/Curriculum Website/New Resource Search/images/bison.png"; }
                     output_sb.append("<div class=\"resource_main_image\">\n");
                     output_sb.append("<img src=\"");
                     output_sb.append(cover_image_path);

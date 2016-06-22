@@ -12,6 +12,6 @@ package stans.db;
 public class Enumerators {
 
     public enum BBComparisonOperator {
-        CONTAINS, EQUALS, NOTEQUALS, STARTSWITH, ENDSWITH, NOTBLANK, BLANK
+        CONTAINS, EQUALS, NOTEQUALS, STARTSWITH, ENDSWITH, NOTBLANK, BLANK, BETWEEN, AFTER, BEFORE
     }
 }

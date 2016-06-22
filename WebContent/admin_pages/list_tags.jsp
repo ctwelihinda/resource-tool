@@ -52,7 +52,7 @@ if ((show_resources_text != null) && (show_resources_text.equals("show")))
                 for (Tag t : TagLoader.loadByTypeID(Integer.parseInt(tag_type_id)))
                 {
                     %><li><%
-                        %><%=t.getValue()%> (<%=t.getDBID()%>) <a target="_blank" href="https://www.edonline.sk.ca/webapps/moe-resource_tool_final-BBLEARN/admin_pages/edit_tags.jsp?db_id=<%=t.getDBID()%>">Edit This Tag</a> - <a target="_blank" href="https://www.edonline.sk.ca/webapps/moe-resource_tool_final-BBLEARN/admin_pages/list_resources_by_tag.jsp?tag_id=<%=t.getDBID()%>">List Resources (warning: may crash if this is a very common tag)</a><%
+                        %><%=t.getValue()%> (<%=t.getDBID()%>) <a target="_blank" href="https://bblearndev.merlin.mb.ca/webapps/moe-resource_tool_final-BBLEARN/admin_pages/edit_tags.jsp?db_id=<%=t.getDBID()%>">Edit This Tag</a> - <a target="_blank" href="https://bblearndev.merlin.mb.ca/webapps/moe-resource_tool_final-BBLEARN/admin_pages/list_resources_by_tag.jsp?tag_id=<%=t.getDBID()%>">List Resources (warning: may crash if this is a very common tag)</a><%
 
                         String this_info = t.getInfo();
                         if ((this_info != null) && (!this_info.equals("")))

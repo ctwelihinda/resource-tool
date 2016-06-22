@@ -31,9 +31,11 @@ public class ResourceLoader {
         args.add(r_number);
 
         ArrayList<Integer> results = Query.find("moe_resource", "entry_id = ?", args);
-
+      
         if (!results.isEmpty()) {
+        	
             rtn = new Resource(results.get(0));
+        	
         }
 
         return rtn;
@@ -314,8 +316,10 @@ public class ResourceLoader {
             constraints.add(Integer.toString(t.getDBID()));
             for (Integer join_id : Query.find("moe_resource_tag", "tag_id = ?", constraints))
             {
+            	//System.out.println("join id " + join_id);
                 //Integer resource_id = (Integer) Query.select("moe_resource_tag", "resource_id", join_id);
                 Integer group_id = (Integer) Query.select("moe_resource_tag", "parent_id", join_id);
+                //System.out.println("group " + group_id);
                 
                 if (group_id != null)
                 {
@@ -326,6 +330,7 @@ public class ResourceLoader {
                     {
                         group_ids.put(group_id, group_found_count+1);
                         group_hash_tracker.put(group_id, true);
+                       // System.out.println("put group " + group_id + " on the hash map");
                     }
                 }
             }
