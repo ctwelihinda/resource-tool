@@ -33,6 +33,23 @@ public class TagLoader {
 
         return results;
     }
+    
+    public static ArrayList<Tag> loadRootOnlyByPublisherDBID(int pub_db_id) {
+        ArrayList<Tag> results = new ArrayList<Tag>();
+        ArrayList<String> join_args = new ArrayList<String>();
+        ArrayList<Integer> join_ids;
+
+        join_args.add(Integer.toString(pub_db_id));
+        join_ids = Query.find("moe_publisher_tag", "publisher_id = ?", join_args);
+
+        for (int join_id : join_ids) {
+            if ( ( ( Integer )Query.select( "moe_publisher_tag", "parent_id", join_id ) )==0 ) {
+                results.add(new Tag( ( Integer )Query.select( "moe_publisher_tag", "tag_id", join_id ), join_id ) );
+            }
+        }
+
+        return results;
+    }
 
     /*
      * Returns only tags that have no parent
