@@ -8,26 +8,27 @@ import blackboard.platform.security.authentication.HttpAuthManager;
 import blackboard.platform.session.BbSession;
 import blackboard.platform.session.BbSessionManagerServiceFactory;
 import stans.resourcerecord.dao.JoinPersister;
+import stans.resourcerecord.dao.TagPersister;
 import stans.resourcerecord.helpers.TaggerPermissionsManager;
+import stans.resourcerecord.model.Tag;
+import stans.db.Query;
+
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import stans.EasyUser;
-import stans.db.Query;
-import stans.resourcerecord.helpers.ValidationHelpers;
-import stans.resourcerecord.model.Resource;
-import stans.resourcerecord.model.PubDistRecord;
-import stans.resourcerecord.model.Tag;
 
 /**
  *
  * @author peter
  */
-public class RemoveTagsFromResource extends HttpServlet {
+public class CreateAndAddNewTagToPublisher extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
@@ -42,7 +43,6 @@ public class RemoveTagsFromResource extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        		
         
     // ######### AUTHENTICATION ###############
         // check if user is logged in, and redirect to login page if not
@@ -56,6 +56,7 @@ public class RemoveTagsFromResource extends HttpServlet {
         EasyUser curr_easyuser = new EasyUser(request);
         try
         {
+        	System.out.println("Inside Create Tag");
             boolean can_edit = false;
             for (String role_name : TaggerPermissionsManager.getAllAllowedRoles())
             {
@@ -69,76 +70,76 @@ public class RemoveTagsFromResource extends HttpServlet {
             }
             else
             {
-                String tag_id_string = request.getParameter("tag_id");
-                String join_id_string = request.getParameter("join_id");
-                String resource_id_string = request.getParameter("resource_id");
-                String publisher_id_string = request.getParameter("publisher_id");
-                
 
-                if (
-					( tag_id_string!=null ) &&
-					( ValidationHelpers.isPositiveInteger( tag_id_string ) ) &&
-					( resource_id_string!=null ) &&
-					( ValidationHelpers.isPositiveInteger( resource_id_string ) )
-                ) {
-                    Integer tag_id = Integer.parseInt( tag_id_string );
-                    Integer resource_id = Integer.parseInt( resource_id_string );
+                PrintWriter out = response.getWriter();
+                StringBuilder sb = new StringBuilder();
 
-                    final int CORE_ID = 4220;
-                    final int ROVER_ID = 117368;
-                    final int SUPPORT_ID = 117372;
+                String resource_id = request.getParameter("publisher_id");
+                String tag_value = request.getParameter("tag_value");
+                String tag_type = request.getParameter("tag_type");
+                String parent_id = request.getParameter("parent_id");
 
-                    switch (tag_id)
+				System.out.println( "publisher_id = " + resource_id );
+				System.out.println( "tag_value = " + tag_value );
+				System.out.println( "tag_type = " + tag_type );
+				
+                ArrayList<String> tagtype_args = new ArrayList<String>();
+                ArrayList<String> tagfind_args = new ArrayList<String>();
+                tagtype_args.add(tag_type);
+
+                ArrayList<Integer> tagtype_ids = Query.find("moe_tagtype", "type = ?", tagtype_args);
+
+                if (tagtype_ids.size() > 0)
+                {
+                    tagfind_args.add(Integer.toString(tagtype_ids.get(0)));
+                    tagfind_args.add(tag_value);
+
+                    ArrayList<Integer> existing_tags = Query.find("moe_tag", "tagtype_id = ? AND value = ?", tagfind_args); // does this tag already exist?
+
+                    Tag new_tag;
+                    if (existing_tags.size() > 0) // if it exists, just create a tag object with the id
                     {
-                        case CORE_ID:
-                            Query.update("moe_resource", "is_core", resource_id, "0");
-                            break;
-                        case ROVER_ID:
-                            Query.update("moe_resource", "is_rover", resource_id, "0");
-                            break;
-                        case SUPPORT_ID:
-                            Query.update("moe_resource", "is_core", resource_id, "0");
-                            break;
+                        new_tag = new Tag(existing_tags.get(0));
                     }
+                    else // otherwise add the new tag tso the db
+                    {
+                        new_tag = TagPersister.createNew(tag_value, tagtype_ids.get(0));
+                    }
+                    Integer joinID;
+                    if(parent_id == null){
+                    joinID = JoinPersister.addPublisherTagJoin(Integer.parseInt(resource_id), new_tag.getDBID());
+                    } else { joinID = JoinPersister.addPublisherTagJoin(Integer.parseInt(resource_id), new_tag.getDBID(), Integer.parseInt(parent_id));}
+
                     
-					
-					if(
-						( join_id_string!=null ) &&
-						( ValidationHelpers.isPositiveInteger( join_id_string ) )
-					) {
-						JoinPersister.removeResourceTagJoin( Integer.parseInt( join_id_string ), new Resource( resource_id ) );
-					} else {
-						JoinPersister.removeResourceTagJoin(resource_id, tag_id);
-					}
 
-                    Tag t = new Tag(tag_id);
-                    Resource r = new Resource(resource_id);
+                    sb.append("{\"tags\":[");
+                        sb.append("{\"id\":\"");
+                        sb.append(Integer.toString(new_tag.getDBID()));
+						sb.append("\", \"join_id\":\"");
+						sb.append(Integer.toString( joinID ) );
+                        sb.append("\", \"type\":\"");
+                        sb.append(new_tag.getType());
+                        sb.append("\", \"value\":\"");
+                        sb.append(new_tag.getValue());
+                        sb.append("\"}");
+                    sb.append("]}");
+                    
+                    /*
+                    sb.append("<li class=\"tag_row\" id=\"");
+                    sb.append(Integer.toString(new_tag.getDBID()));
+                    sb.append("\">");
+                    sb.append(new_tag.getType());
+                    sb.append(": ");
+                    sb.append(new_tag.getValue());
+                    sb.append("<span class=\"tag_remove_box\" id=\"");
+                    sb.append(Integer.toString(new_tag.getDBID()));
+                    sb.append("\">DELETE</span>");
+                    sb.append("</li>");
+                    */
+                    out.println(sb);
 
-                    if (t.getType().equals("Title"))
-                    {
-                        //String quick_title = "'" + r.getQuickData("title").replace(t.getValue(), "") + "'";
-                        //Query.update("moe_resource", "quick_title", resource_id, quick_title);
-                    }
-                } else if (
-    					( tag_id_string!=null ) &&
-    					( ValidationHelpers.isPositiveInteger( tag_id_string ) ) &&
-    					( publisher_id_string!=null ) &&
-    					( ValidationHelpers.isPositiveInteger( publisher_id_string ) )
-                    ) {
-                		Integer tag_id = Integer.parseInt( tag_id_string );
-                		Integer resource_id = Integer.parseInt( publisher_id_string );
-                	
-						if(
-							( join_id_string!=null ) &&
-							( ValidationHelpers.isPositiveInteger( join_id_string ) )
-							) {
-							JoinPersister.removePublisherTagJoin( Integer.parseInt( join_id_string ), new PubDistRecord( resource_id ) );
-							} else {
-							JoinPersister.removePublisherTagJoin(resource_id, tag_id);
-							}
-                	
-                		}
-                
+                }
+                out.close();            
             }
         }
         catch (Exception e)

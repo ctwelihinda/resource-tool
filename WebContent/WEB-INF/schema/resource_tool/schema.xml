@@ -113,13 +113,15 @@
         <columnref name="resource_id"/>
     </index>
   </table>
+  
   <table name="moe_publisher">
-  <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary primary key for the table"/>
-  <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who created the resource" />
-  <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
-  <column name="updated_at" data-type="datetime" nullable="true" identity="false" comment="" />
-  <column name="name" data-type="varchar(256)" nullable="true" identity="false" comment="" />
-  <column name="is_active" data-type="int" nullable="true" identity="false" comment="Whether or not it's active (0 or null for no, 1 for yes)" />
+    <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary primary key for the table"/>
+    <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who created the resource" />
+    <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="updated_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="name" data-type="varchar(256)" nullable="true" identity="false" comment="" />
+    <column name="is_active" data-type="int" nullable="true" identity="false" comment="Whether or not it's active (0 or null for no, 1 for yes)" />
+    <column name="quick_pic" data-type="varchar(256)" nullable="true" identity="false" comment="See the comments for quick_title. Can be used to hold the image path." />
 
 
     <primary-key name="moe_publisher_pk1" comment="Unique primary key">
@@ -242,6 +244,27 @@
     </index>
     <index name="moe_resource_resource_ui2" unique="false">
         <columnref name="resource_2_id"/>
+    </index>
+  </table>
+
+    <table name="moe_resource_publisher" comment="Table for resource self-joins. Implemented for the Selection-Source type specifically, but could have a more general use.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who associated the resources" />
+    <column name="resource_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the first resource" />
+    <column name="publisher_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the second resource" />
+    <column name="submitted_by" data-type="int" nullable="true" identity="false" comment="The type of the first resource" />
+
+
+    <primary-key name="moe_resource_publisher_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_resource_publisher_ui1" unique="false">
+        <columnref name="resource_id"/>
+    </index>
+    <index name="moe_resource_publisher_ui2" unique="false">
+        <columnref name="publisher_id"/>
     </index>
   </table>
 

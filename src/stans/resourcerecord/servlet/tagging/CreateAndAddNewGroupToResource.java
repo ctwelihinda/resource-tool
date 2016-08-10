@@ -22,6 +22,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import stans.EasyUser;
+import stans.resourcerecord.helpers.ValidationHelpers;
 
 /**
  *
@@ -70,15 +71,26 @@ public class CreateAndAddNewGroupToResource extends HttpServlet {
             {
                 String tag_name = request.getParameter("tag_name");
                 String resource_id = request.getParameter("resource_id");
+                String publisher_id = request.getParameter("publisher_id");
                 //System.out.println(tag_name + " " + resource_id);
-
-                ArrayList<String> tagtype_args = new ArrayList<String>();
-                tagtype_args.add("Tag Group");
-
-                ArrayList<Integer> tagtype_ids = Query.find("moe_tagtype", "type = ?", tagtype_args);
-
-                Tag new_tag = TagPersister.createNew(tag_name, tagtype_ids.get(0));
-                JoinPersister.addResourceTagJoin(Integer.parseInt(resource_id), new_tag.getDBID());
+                if(resource_id != null && ValidationHelpers.isPositiveInteger(resource_id)){
+	                ArrayList<String> tagtype_args = new ArrayList<String>();
+	                tagtype_args.add("Tag Group");
+	
+	                ArrayList<Integer> tagtype_ids = Query.find("moe_tagtype", "type = ?", tagtype_args);
+	
+	                Tag new_tag = TagPersister.createNew(tag_name, tagtype_ids.get(0));
+	                JoinPersister.addResourceTagJoin(Integer.parseInt(resource_id), new_tag.getDBID());
+                } else if (publisher_id != null && ValidationHelpers.isPositiveInteger(publisher_id)){
+	                ArrayList<String> tagtype_args = new ArrayList<String>();
+	                tagtype_args.add("Tag Group");
+	
+	                ArrayList<Integer> tagtype_ids = Query.find("moe_tagtype", "type = ?", tagtype_args);
+	
+	                Tag new_tag = TagPersister.createNew(tag_name, tagtype_ids.get(0));
+	                JoinPersister.addPublisherTagJoin(Integer.parseInt(publisher_id), new_tag.getDBID());
+                	
+                }
             }
         }
         catch (Exception e)

@@ -36,10 +36,14 @@ public class PubDistPersister {
     // set values
         HashMap cols_and_vals = new HashMap();
         
-       
+        System.out.println("User Results returned size: ");
+        System.out.println(user_results.size());
+        System.out.println(username);
+        System.out.println(curr_time);
         if (user_results.size() > 0)
         {
             cols_and_vals.put("created_by", user_results.get(0));
+            System.out.println("Created by :" + user_results.get(0));
         }            
         if (curr_time != null)
         {

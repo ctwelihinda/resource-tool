@@ -76,7 +76,7 @@ import stans.EasyUser;
 	                if (new_pub != null)
 	                {
 	                    int pk1 = new_pub.getDBID();
-	                    //System.out.println("The pk1 of the new Resource is " + Integer.toString(pk1));
+	                    System.out.println("The pk1 of the new Publisher is " + Integer.toString(pk1));
 	                    status_msg = "New resource successfully created<br/>The DB ID is: " + pk1;
 	                    dispatch_url = "/webapps/moe-resource_tool_final-BBLEARN/EditPubDist?publisher_id=" + pk1;
 

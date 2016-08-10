@@ -6,6 +6,7 @@ package stans.resourcerecord.model;
 import java.sql.Timestamp;
 import java.util.*;
 
+import stans.db.Query;
 import stans.resourcerecord.dao.TagLoader;
 import stans.resourcerecord.helpers.TagComparator;
 
@@ -66,7 +67,20 @@ public class PubDistRecord {
     	return db_id;
     }
     
-    
+    public String getCreatedBy(){
+        
+	    if (created_by == null) {
+	    String q_result = (String) Query.select("moe_publisher", "created_by", db_id);
+	    	if (q_result != null) {
+	    		int user_pk1 = Integer.parseInt(q_result);
+	            created_by = (String) Query.select("users", "user_id", user_pk1);
+	        }
+	    }
+	    if (created_by == null) {
+	       return "";
+	    }
+	       return created_by;
+    }
     public String getName(){
     	return name;
     }

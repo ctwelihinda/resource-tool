@@ -4,17 +4,20 @@ package stans.resourcerecord.servlet.tagging;
 import blackboard.platform.security.authentication.HttpAuthManager;
 import blackboard.platform.session.BbSession;
 import blackboard.platform.session.BbSessionManagerServiceFactory;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import stans.EasyUser;
 import stans.db.Query;
 import stans.resourcerecord.dao.*;
@@ -62,13 +65,13 @@ public class EditPubDist extends HttpServlet {
     PubDistRecord this_resource = null;
 	
     if( ( RId == null ) ) {
-		//this_resource = new Resource( Integer.parseInt( RId ) );
+		this_resource = new PubDistRecord( Integer.parseInt( RId ) );
 	} else {
 		this_resource = PubDistLoader.loadByDBID(Integer.parseInt(RId));
 	}
     
     int this_resource_id = this_resource.getDBID();
-
+    System.out.println(this_resource_id + " after Basic Info");
             
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -83,7 +86,7 @@ public class EditPubDist extends HttpServlet {
         "phone",
         new ArrayList<String>(Arrays.asList(
             "Primary Phone",
-            "Cell Phone",
+            "Other Phone",
             "Fax"
 
         ))
@@ -96,11 +99,26 @@ public class EditPubDist extends HttpServlet {
     tag_option_names.put(
         "address",
         new ArrayList<String>(Arrays.asList(
-            "American",
-            "Canadian",
-            "Overseas"
+
+        	"Street Address",
+        	"Postal Code",
+        	"Zip Code",
+        	"City",
+        	"Province",
+        	"State",
+        	"Country"
+
         ))
     );
+    
+    tag_option_names.put(
+    		"country",
+    		new ArrayList<String>(Arrays.asList(
+    				"Canada",
+    				"USA",
+    				"UK"
+    				))
+    		);
     tag_option_names.put(
         "digital",
         new ArrayList<String>(Arrays.asList(
@@ -114,7 +132,11 @@ public class EditPubDist extends HttpServlet {
         "subject",
         TagLoader.loadByTypeName("Subject")
     );
-    
+    tag_options.put(
+            "other_curriculum",
+            TagLoader.loadByTypeName("Country")
+        );
+    //tag_options.get("other_curriculum").addAll(TagLoader.loadByTypeName("Resource List Classification"));
     tag_options.put(
     		"status",
     		TagLoader.loadByTypeName("Active")
@@ -125,15 +147,22 @@ public class EditPubDist extends HttpServlet {
     tags.put(   "contacts",		new ArrayList<Tag>());
     tags.put(   "address",		new ArrayList<Tag>());
     tags.put(   "digital",		new ArrayList<Tag>());
-    
+    tags.put(   "other",		new ArrayList<Tag>());
+    tags.put(	"groups", 		new ArrayList<Tag>());
     tags.put(   "status",		new ArrayList<Tag>());
+    tags.put("PubContact", 		new ArrayList<Tag>());
 
     for (Tag t : this_resource.getRootTags())
     {
+    	System.out.println(t.getType() + " " + t.getValue() + " " + t.getJoinID() +  " " + t.getChildren(this_resource_id).toString() );
         if (tag_option_names.get("phone").contains(t.getType()))           { tags.get("phone").add(t); }
         else if (tag_option_names.get("digital").contains(t.getType()))		{ tags.get("digital").add(t);}
         else if (tag_option_names.get("address").contains(t.getType()))		{ tags.get("address").add(t);}
         else if (t.getType().equals("Active"))								{ tags.get("status").add(t); }
+        else if(t.getType().equals("PubContact"))							{ tags.get("PubContact").add(t);}
+        else if (t.getType().equals("Tag Group"))                           { tags.get("groups").add(t); System.out.println( "TAG GROUP:  " + 
+        t.getChildren(this_resource_id).toString()); }
+        else if (tag_option_names.get("other").contains(t.getType()))       { tags.get("other").add(t); }
         else                                                                { tags.get("misc").add(t); }
     }
 

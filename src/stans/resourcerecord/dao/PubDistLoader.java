@@ -3,7 +3,6 @@ package stans.resourcerecord.dao;
 import java.util.ArrayList;
 
 import stans.db.Query;
-import stans.resourcerecord.model.Resource;
 import stans.resourcerecord.model.PubDistRecord;
 
 public class PubDistLoader {
