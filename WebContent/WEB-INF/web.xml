@@ -178,8 +178,16 @@
         <servlet-class>stans.resourcerecord.servlet.tagging.AddResourceRelationship</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AddPubResourceRelationship</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.AddPubResourceRelationship</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>RemoveResourceRelationship</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.tagging.RemoveResourceRelationship</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemovePubRelationship</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.RemovePubRelationship</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EditResource</servlet-name>
@@ -402,8 +410,16 @@
         <url-pattern>/AddResourceRelationship</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>AddPubResourceRelationship</servlet-name>
+        <url-pattern>/AddPubResourceRelationship</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>RemoveResourceRelationship</servlet-name>
         <url-pattern>/RemoveResourceRelationship</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemovePubRelationship</servlet-name>
+        <url-pattern>/RemovePubRelationship</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>EditResource</servlet-name>

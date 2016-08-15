@@ -327,9 +327,9 @@ public class EditResource extends HttpServlet {
         else if (t.getType().equals("STF Link"))                            { tags.get("stf_borrow").add(t); }
         else if (t.getType().equals("Streaming License"))					{ tags.get("licenses").add(t); }
         else if (t.getType().equals("Tag Group"))                           { tags.get("groups").add(t);
-        	for (Tag tag : t.getChildren(this_resource_id)){
-        		System.out.println(tag.getType() + " " + tag.getValue() + " " + tag.getJoinID() );
-        	}
+        //	for (Tag tag : t.getChildren(this_resource_id)){
+        //		System.out.println(tag.getType() + " " + tag.getValue() + " " + tag.getJoinID() );
+        //	}
         }
         else if (tag_option_names.get("sendRec").contains(t.getType()))		{ tags.get("sendRec").add(t);}
         else if (t.getType().equals("Status"))								{ tags.get("status").add(t); }

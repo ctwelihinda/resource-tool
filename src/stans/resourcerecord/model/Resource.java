@@ -81,6 +81,21 @@ public class Resource implements Comparable<Resource> {
         ArrayList<Integer> results = Query.find("moe_resource", "parent_id = ?", args);
         return results;
     }
+    
+    public ArrayList<Integer> getPubDistJoinIDs(){
+    	ArrayList<String> args = new ArrayList<String>();
+    	args.add(Integer.toString(db_id));
+    	ArrayList<Integer> results = Query.find("moe_resource_publisher", "resource_id = ?", args);
+    	return results;
+    }
+    public ArrayList<Integer> getPubDistIDs(ArrayList<Integer> join_ids){
+    	ArrayList<Integer> results = new ArrayList<Integer>();
+    	for (int i = 0; i < join_ids.size(); i++){
+    		results.add((Integer) Query.select("moe_resource_publisher", "publisher_id", join_ids.get(i)));
+    		
+    	}
+    	return results;
+    }
 	public ArrayList<Resource> getChildren() {
 		ArrayList<Resource> children = new ArrayList<Resource>();
 		for( int i : this.getChildIDs() ) {

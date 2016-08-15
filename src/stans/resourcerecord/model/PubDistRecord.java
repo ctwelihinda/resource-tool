@@ -17,6 +17,7 @@ import stans.resourcerecord.helpers.TagComparator;
 public class PubDistRecord {
     private int db_id;
     private String created_by;
+    private String type;
     private Timestamp created_at;
     private Timestamp updated_at;
     private String name;
@@ -49,6 +50,7 @@ public class PubDistRecord {
         email = "";
         website = "";
         notes = "";
+
     }
     public PubDistRecord(int db_id, String pName, String pAddress, String pPhone, String pEmail, String pWebsite, String pNotes){
     	this.db_id = db_id;
@@ -66,7 +68,7 @@ public class PubDistRecord {
     public int getDBID(){
     	return db_id;
     }
-    
+
     public String getCreatedBy(){
         
 	    if (created_by == null) {
@@ -82,6 +84,10 @@ public class PubDistRecord {
 	       return created_by;
     }
     public String getName(){
+    	name = (String) Query.select("moe_publisher", "name", db_id);
+    	if(name == null){
+    		return "";
+    	}
     	return name;
     }
     public String getAddress(){

@@ -398,4 +398,50 @@ public class JoinPersister {
         return pk1;
     }
     
+    public static int addPubResourceRelation(int resource_id, int publisher_id, int submitted, int type)
+    {       
+    // get user
+        ContextManager contextManager = ContextManagerFactory.getInstance();
+        Context ctx = contextManager.getContext();
+
+        User user = ctx.getUser();
+        String username = user.getUserName();
+        
+        ArrayList<String> user_args = new ArrayList<String>();
+        ArrayList<Integer> user_results;
+        user_args.add(username);
+
+        user_results = Query.find("users", "user_id = ?", user_args);
+
+    // get timestamp
+        String curr_time = Query.getCurrentTime().toString();
+        if (curr_time != null)
+        {// curr_time = "TO_TIMESTAMP('" + curr_time + "','YYYY-MM-DD HH24:MI:SS.FF6')";
+        	curr_time = "CAST(CAST('" + curr_time + "' as varchar(max)) as datetime)";
+        }
+        
+    // set values
+        HashMap cols_and_vals = new HashMap();
+
+        cols_and_vals.put("resource_id", resource_id);
+        cols_and_vals.put("publisher_id", publisher_id);
+        cols_and_vals.put("submitted_by", submitted);
+        cols_and_vals.put("pubdist_type", type);
+        if (user_results.size() > 0)
+        {
+            cols_and_vals.put("created_by", user_results.get(0));
+        }
+        if (curr_time != null)
+        {
+            cols_and_vals.put("created_at", curr_time);
+        }
+        
+    // insert new record
+        int pk1 = Query.insert("moe_resource_publisher", cols_and_vals);
+        ResourcePersister.updateResourceTimestamp(resource_id);
+        PubDistPersister.updateResourceTimestamp(publisher_id);
+        
+        return pk1;
+    }
+    
 }

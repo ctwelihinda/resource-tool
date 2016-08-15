@@ -247,12 +247,14 @@
     </index>
   </table>
 
-    <table name="moe_resource_publisher" comment="Table for resource self-joins. Implemented for the Selection-Source type specifically, but could have a more general use.">
+  <table name="moe_resource_publisher" comment="Table for resource publisher-joins.">
     <column name="pk1" data-type="int" nullable="false" identity="true" />
     <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="updated_at" data-type="datetime" nullable="true" identity="false" comment="" />
     <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who associated the resources" />
     <column name="resource_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the first resource" />
     <column name="publisher_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the second resource" />
+    <column name="pubdist_type" data-type="int" nullable="true" identity="false" comment="Publisher (0) or Distributer(1)"/>
     <column name="submitted_by" data-type="int" nullable="true" identity="false" comment="The type of the first resource" />
 
 
