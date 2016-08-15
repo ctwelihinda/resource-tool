@@ -41,6 +41,8 @@ String quick_info = (String) request.getAttribute("quick_info");
 ArrayList<Integer> child_ids = this_resource.getChildIDs();
 Resource parent = this_resource.getParent();
 ArrayList<ResourceRelationship> relationships = this_resource.getResourceRelationships();
+ArrayList<Integer> pubResJoinIds = this_resource.getPubDistJoinIDs();
+ArrayList<Integer> pubDist_ids = this_resource.getPubDistIDs(pubResJoinIds);
 
 HashMap< String,ArrayList<Tag> > tags = (HashMap< String,ArrayList<Tag> >) request.getAttribute("tags");
 HashMap< String,ArrayList<Tag> > tag_options = (HashMap< String,ArrayList<Tag> >) request.getAttribute("tag_options");
@@ -96,6 +98,15 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
                             $.post(
                                 "RemoveResourceRelationship",
                                 { relationship_id: tag_id }
+                            ).done(function() {
+                                $("tr#" + tag_id).remove();
+                            });
+                        }
+                        else if (tag_class.toString().indexOf("remove_publisher") > -1)
+                        {
+                            $.post(
+                                "RemovePubRelationship",
+                                { join_id: tag_id }
                             ).done(function() {
                                 $("tr#" + tag_id).remove();
                             });
@@ -544,6 +555,102 @@ HashMap< String,ArrayList<String> > tag_option_names = (HashMap< String,ArrayLis
                         <div style="clear: both"></div>
                     <% } %>
                 </div>
+                
+                 <!-- ################  NEW PUBLISHER/DISTRIBUTOR ####################### -->
+ 		<div class="tagger_section">
+                    <div class="tagger_section_title">Publishers and Distributors</div>
+                    <div class="horizontal_form_wrapper">
+                        <%
+                        boolean hasSubmit = false;
+                            if (pubResJoinIds.size() > 0)
+                            {
+                            
+                                %>
+                                    <div class="tagger_section_list_header">This resource is a product of:</div>
+                                    <div class="tags_container" id="publisher_container">
+                                        <table class="resource_table" id="publisher_table">
+                                            <thead>
+                                                <tr>
+                                                	<td>SUBMITTED</td>
+                                                    <td>TYPE</td>
+                                                    <td>ID</td>
+                                                    <td>TITLE</td>
+                                                    <td>ACTION</td>
+                                                    <td>CREATOR</td>
+                                                    <td>DATE</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                                <%  
+                                                for(int i = 0; i < pubResJoinIds.size(); i++) {
+                                                PubResourceRelationship theRel = new PubResourceRelationship(pubResJoinIds.get(i));
+                                                if(theRel.getPubId() != -1){
+                                                	if(theRel.isSubmittedBy().contains("x")){
+                                                		hasSubmit = true;
+                                                	}
+                                                String created_at_date = new SimpleDateFormat("MMM d, yyyy").format(theRel.getCreatedAt());
+                                        %>
+                                                <tr id=<%=pubResJoinIds.get(i) %>>
+                                                	<td class="res_table_title"><%=theRel.isSubmittedBy()%></td>
+                                                    <td class="res_table_title"><%=theRel.getType()%></td>
+                                                    <td class="res_table_r"><a target="_blank" href="EditPubDist?publisher_id=<%=theRel.getPubId()%>"><%=theRel.getPubId()%></a></td>
+                                                    <td class="res_table_title"><a target="_blank" href="EditPubDist?publisher_id=<%=theRel.getPubId()%>"><%=theRel.getPubName()%></a></td>
+                                                    <td class="res_table_edit">
+                                                        <% if (permissions.getPermissionLevel("parent") >= TaggerPermissionsManager.READ_WRITE_DELETE) { %>
+
+                                                            <span class="tag_remove_box remove_publisher" id=<%=pubResJoinIds.get(i) %>>REMOVE RELATIONSHIP</span>
+                                                        <% } 
+                                                    %>
+                                                    </td>
+                                                    <td class="tag_table_user"><%= theRel.getCreatedBy()%></td>
+                                                    <td class="tag_table_date"><%=theRel.getCreatedAt()%></td>
+                                                </tr>
+                                                <%}
+                                                }%>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                <%
+                            } else if ((pubDist_ids.size() == 0))
+                            {
+                                %><div class="tagger_section_list_header">This resource is a product of:</div><%
+                            }
+                        %>
+                        <% if (permissions.getPermissionLevel("parent") >= TaggerPermissionsManager.READ_WRITE_DELETE) 
+                        { %>
+                            <div class="form_wrapper">
+                                <form name="add_pubdist" id="add_pubdist_id">
+                                    Enter the publisher database ID here: <input type="text" name="publisher_id"/>
+                                    <input type="hidden" name="resource_id" value="<%=this_resource_id%>"/>
+                                    <input type="hidden" id="unique_submit" value="<%=hasSubmit %>"/>
+                                    <button type="button" id="add_publisher_submit">ADD PUBLISHER / DISTRIBUTOR</button><br/>
+                                    
+                                     <div class="horizontal_form_wrapper">
+                                        <span class="form_text">Publisher or Distributor?:</span><br/>
+                                        <select id="pubdist_type_select" name="pubdist_type">
+                                            <option value="0">Publisher</option>
+                                            <option value="1">Distributor</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="horizontal_form_wrapper">
+                                        <span class="form_text">Submitted By This Publisher / Distributor:</span><br/>
+                                        <select id="submitted_select" name="submitted">
+                                            <option value="0">No</option>
+                                            <option value="1">Yes</option>
+                                        </select>
+                                    </div>
+                                </form>
+                                
+                            </div>
+                        <% } %>
+                        
+                        
+                    </div> <!--end of parent section-->
+                 <div style="clear: both"></div>
+             </div>
+                
 
 
 

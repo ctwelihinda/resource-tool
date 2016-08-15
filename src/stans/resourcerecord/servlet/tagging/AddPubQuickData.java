@@ -8,26 +8,25 @@ import blackboard.platform.security.authentication.HttpAuthManager;
 import blackboard.platform.session.BbSession;
 import blackboard.platform.session.BbSessionManagerServiceFactory;
 import stans.resourcerecord.dao.JoinPersister;
+import stans.resourcerecord.dao.TagPersister;
 import stans.resourcerecord.helpers.TaggerPermissionsManager;
+import stans.resourcerecord.model.Tag;
+import stans.db.Query;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import stans.EasyUser;
-import stans.db.Query;
-import stans.resourcerecord.helpers.ValidationHelpers;
-import stans.resourcerecord.model.Resource;
-import stans.resourcerecord.model.PubDistRecord;
-import stans.resourcerecord.model.Tag;
+import stans.resourcerecord.dao.PubDistPersister;
 
 /**
  *
  * @author peter
  */
-public class RemoveTagsFromResource extends HttpServlet {
+public class AddPubQuickData extends HttpServlet {
 
     /**
      * Processes requests for both HTTP
@@ -42,7 +41,6 @@ public class RemoveTagsFromResource extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        		
         
     // ######### AUTHENTICATION ###############
         // check if user is logged in, and redirect to login page if not
@@ -69,84 +67,52 @@ public class RemoveTagsFromResource extends HttpServlet {
             }
             else
             {
-                String tag_id_string = request.getParameter("tag_id");
-                String join_id_string = request.getParameter("join_id");
-                String resource_id_string = request.getParameter("resource_id");
-                String publisher_id_string = request.getParameter("publisher_id");
+            	System.out.println("Hello from inside PubQuickDat");
+                PrintWriter out = response.getWriter();
+                StringBuilder sb = new StringBuilder();
+
+                String type = request.getParameter("type");
+                String value = request.getParameter("value");
+                String resource_id = request.getParameter("publisher_id");
+
+                System.out.println("AddQuickData: type=" + type);
+                System.out.println("AddQuickData: value=" + value);
+                System.out.println("AddQuickData: resource_id=" + resource_id);
                 
-
-                if (
-					( tag_id_string!=null ) &&
-					( ValidationHelpers.isPositiveInteger( tag_id_string ) ) &&
-					( resource_id_string!=null ) &&
-					( ValidationHelpers.isPositiveInteger( resource_id_string ) )
-                ) {
-                    Integer tag_id = Integer.parseInt( tag_id_string );
-                    Integer resource_id = Integer.parseInt( resource_id_string );
-
-                    final int CORE_ID = 4220;
-                    final int ROVER_ID = 117368;
-                    final int SUPPORT_ID = 117372;
-
-                    switch (tag_id)
+                if ((type != null) && (value != null) && (resource_id != null))
+                {
+                    if (type.equals("title"))
                     {
-                        case CORE_ID:
-                            Query.update("moe_resource", "is_core", resource_id, "0");
-                            break;
-                        case ROVER_ID:
-                            Query.update("moe_resource", "is_rover", resource_id, "0");
-                            break;
-                        case SUPPORT_ID:
-                            Query.update("moe_resource", "is_core", resource_id, "0");
-                            break;
+						System.out.println( "AddPubQuickData:" + value );
+                        PubDistPersister.setName(Integer.parseInt(resource_id), value);
                     }
-                    
-					
-					if(
-						( join_id_string!=null ) &&
-						( ValidationHelpers.isPositiveInteger( join_id_string ) )
-					) {
-						JoinPersister.removeResourceTagJoin( Integer.parseInt( join_id_string ), new Resource( resource_id ) );
-					} else {
-						JoinPersister.removeResourceTagJoin(resource_id, tag_id);
-					}
 
-                    Tag t = new Tag(tag_id);
-                    Resource r = new Resource(resource_id);
-
-                    if (t.getType().equals("Title"))
+                    if (type.equals("image"))
                     {
-                        //String quick_title = "'" + r.getQuickData("title").replace(t.getValue(), "") + "'";
-                        //Query.update("moe_resource", "quick_title", resource_id, quick_title);
+                        String new_image_path = "'" + value + "'";
+                        //System.out.println("AddQuickData: new_image_path=" + new_image_path);
+                        Query.update("moe_publisher", "quick_pic", Integer.parseInt(resource_id), new_image_path);
                     }
-                } else if (
-    					( tag_id_string!=null ) &&
-    					( ValidationHelpers.isPositiveInteger( tag_id_string ) ) &&
-    					( publisher_id_string!=null ) &&
-    					( ValidationHelpers.isPositiveInteger( publisher_id_string ) )
-                    ) {
-                		Integer tag_id = Integer.parseInt( tag_id_string );
-                		Integer resource_id = Integer.parseInt( publisher_id_string );
-                	
-						if(
-							( join_id_string!=null ) &&
-							( ValidationHelpers.isPositiveInteger( join_id_string ) )
-							) {
-							JoinPersister.removePublisherTagJoin( Integer.parseInt( join_id_string ), new PubDistRecord( resource_id ) );
-							} else {
-							JoinPersister.removePublisherTagJoin(resource_id, tag_id);
-							}
-                	
-                		}
+                    if (type.equals("description"))
+                    {
+                        if (value.length() >= 508)
+                        { value = value.substring(0, 508) + "..."; }
+                        String new_desc = "'" + value + "'";
+                        //System.out.println("AddQuickData: new_desc=" + new_desc);
+                        Query.update("moe_publisher", "quick_description", Integer.parseInt(resource_id), new_desc);
+                    }
+                }
                 
+                
+                out.close();            
             }
         }
         catch (Exception e)
         {
-        
+            System.out.print(e.getStackTrace());
         }
     }
-
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP

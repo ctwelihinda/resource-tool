@@ -1,36 +1,27 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package stans.resourcerecord.servlet.tagging;
 
 import blackboard.platform.security.authentication.HttpAuthManager;
 import blackboard.platform.session.BbSession;
 import blackboard.platform.session.BbSessionManagerServiceFactory;
-import stans.resourcerecord.dao.JoinPersister;
-import stans.resourcerecord.dao.TagPersister;
-import stans.resourcerecord.dao.TagTypeLoader;
-import stans.resourcerecord.helpers.TaggerPermissionsManager;
-import stans.resourcerecord.model.Tag;
-import stans.db.Query;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import javax.servlet.RequestDispatcher;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import stans.EasyUser;
+import stans.db.Query;
+import stans.resourcerecord.helpers.TaggerPermissionsManager;
 import stans.resourcerecord.helpers.ValidationHelpers;
 
-/**
- *
- * @author peter
- */
-public class CreateAndAddNewGroupToResource extends HttpServlet {
 
-    /**
+public class RemovePubRelationship extends HttpServlet {
+	
+	  /**
      * Processes requests for both HTTP
      * <code>GET</code> and
      * <code>POST</code> methods.
@@ -43,7 +34,7 @@ public class CreateAndAddNewGroupToResource extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-
+         
     // ######### AUTHENTICATION ###############
         // check if user is logged in, and redirect to login page if not
         BbSession bbSession = BbSessionManagerServiceFactory.getInstance().getSession(request);
@@ -69,28 +60,27 @@ public class CreateAndAddNewGroupToResource extends HttpServlet {
             }
             else
             {
-                String tag_name = request.getParameter("tag_name");
-                String resource_id = request.getParameter("resource_id");
-                String publisher_id = request.getParameter("publisher_id");
-                //System.out.println(tag_name + " " + resource_id);
-                if(resource_id != null && ValidationHelpers.isPositiveInteger(resource_id)){
-	                ArrayList<String> tagtype_args = new ArrayList<String>();
-	                tagtype_args.add("Tag Group");
-	
-	                ArrayList<Integer> tagtype_ids = Query.find("moe_tagtype", "type = ?", tagtype_args);
-	
-	                Tag new_tag = TagPersister.createNew(tag_name, tagtype_ids.get(0));
-	                JoinPersister.addResourceTagJoin(Integer.parseInt(resource_id), new_tag.getDBID());
-                } else if (publisher_id != null && ValidationHelpers.isPositiveInteger(publisher_id)){
-	                ArrayList<String> tagtype_args = new ArrayList<String>();
-	                tagtype_args.add("Tag Group");
-	
-	                ArrayList<Integer> tagtype_ids = Query.find("moe_tagtype", "type = ?", tagtype_args);
-	
-	                Tag new_tag = TagPersister.createNew(tag_name, tagtype_ids.get(0));
-	                JoinPersister.addPublisherTagJoin(Integer.parseInt(publisher_id), new_tag.getDBID());
-                	
+                PrintWriter out = response.getWriter();
+                StringBuilder sb = new StringBuilder();
+
+                String relationship_id = request.getParameter("join_id");
+                System.out.println("join_id: " + relationship_id);
+                if (
+                    (relationship_id != null) &&
+                    (ValidationHelpers.isPositiveInteger(relationship_id))
+                )
+                {
+                    ArrayList<String> args = new ArrayList<String>();
+                    args.add(relationship_id);
+                    Query.delete("moe_resource_publisher", "pk1 = ?", args);
                 }
+                else
+                {
+                    sb.append("error");
+                }
+
+                out.println(sb);
+                out.close();
             }
         }
         catch (Exception e)
@@ -139,4 +129,5 @@ public class CreateAndAddNewGroupToResource extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
 }

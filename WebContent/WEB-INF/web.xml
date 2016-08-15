@@ -14,8 +14,16 @@
         <servlet-class>stans.resourcerecord.servlet.tagCRUD.CreateResource</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>CreatePubDist</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagCRUD.CreatePubDist</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>AddTagToResource</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.tagging.AddTagToResource</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddTagToPublisher</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.AddTagToPublisher</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>AddTagToRecommendation</servlet-name>
@@ -32,6 +40,10 @@
     <servlet>
         <servlet-name>CreateAndAddNewTagToResource</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.tagging.CreateAndAddNewTagToResource</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateAndAddNewTagToPublisher</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.CreateAndAddNewTagToPublisher</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>CreateAndAddNewRecommendation</servlet-name>
@@ -52,6 +64,10 @@
     <servlet>
         <servlet-name>AddTagToResourceByValue</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.tagging.AddTagToResourceByValue</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddTagToPublisherByValue</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.AddTagToPublisherByValue</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>GetOutcomesList</servlet-name>
@@ -146,6 +162,10 @@
         <servlet-class>stans.resourcerecord.servlet.tagging.AddQuickData</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AddPubQuickData</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.AddPubQuickData</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>QuickFind</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.searchAndList.QuickFind</servlet-class>
     </servlet>
@@ -158,12 +178,24 @@
         <servlet-class>stans.resourcerecord.servlet.tagging.AddResourceRelationship</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AddPubResourceRelationship</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.AddPubResourceRelationship</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>RemoveResourceRelationship</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.tagging.RemoveResourceRelationship</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>RemovePubRelationship</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.RemovePubRelationship</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>EditResource</servlet-name>
         <servlet-class>stans.resourcerecord.servlet.tagging.EditResource</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPubDist</servlet-name>
+        <servlet-class>stans.resourcerecord.servlet.tagging.EditPubDist</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SearchByText</servlet-name>
@@ -214,8 +246,16 @@
         <url-pattern>/CreateResource</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>CreatePubDist</servlet-name>
+        <url-pattern>/CreatePubDist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>AddTagToResource</servlet-name>
         <url-pattern>/AddTagToResource</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddTagToPublisher</servlet-name>
+        <url-pattern>/AddTagToPublisher</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AddTagToRecommendation</servlet-name>
@@ -232,6 +272,10 @@
     <servlet-mapping>
         <servlet-name>CreateAndAddNewTagToResource</servlet-name>
         <url-pattern>/CreateAndAddNewTagToResource</url-pattern>
+    </servlet-mapping>
+   <servlet-mapping>
+            <servlet-name>CreateAndAddNewTagToPublisher</servlet-name>
+            <url-pattern>/CreateAndAddNewTagToPublisher</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>CreateAndAddNewRecommendation</servlet-name>
@@ -252,6 +296,10 @@
     <servlet-mapping>
         <servlet-name>AddTagToResourceByValue</servlet-name>
         <url-pattern>/AddTagToResourceByValue</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddTagToPublisherByValue</servlet-name>
+        <url-pattern>/AddTagToPublisherByValue</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GetOutcomesList</servlet-name>
@@ -346,6 +394,10 @@
         <url-pattern>/AddQuickData</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>AddPubQuickData</servlet-name>
+        <url-pattern>/AddPubQuickData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>QuickFind</servlet-name>
         <url-pattern>/QuickFind</url-pattern>
     </servlet-mapping>
@@ -358,12 +410,24 @@
         <url-pattern>/AddResourceRelationship</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>AddPubResourceRelationship</servlet-name>
+        <url-pattern>/AddPubResourceRelationship</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>RemoveResourceRelationship</servlet-name>
         <url-pattern>/RemoveResourceRelationship</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>RemovePubRelationship</servlet-name>
+        <url-pattern>/RemovePubRelationship</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>EditResource</servlet-name>
         <url-pattern>/EditResource</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPubDist</servlet-name>
+        <url-pattern>/EditPubDist</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SearchByText</servlet-name>

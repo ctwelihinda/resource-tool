@@ -48,11 +48,11 @@
             </module-type>
         </module-defs>
         
-	<!-- the folder under WEB-INF/schema folder where schema.xml file is located. That file defines a database table used by this application 
+	<!-- the folder under WEB-INF/schema folder where schema.xml file is located. That file defines a database table used by this application         -->
         <schema-dirs>
             <schema-dir dir-name="resource_tool" />
         </schema-dirs>
-        -->
+
 	<permissions>
             <permission type="java.net.SocketPermission" name="*" actions="connect,resolve"/>
             <permission type="java.util.PropertyPermission" name="*" actions="read,write"/>

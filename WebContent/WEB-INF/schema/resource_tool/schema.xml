@@ -2,6 +2,8 @@
 <comment>This schema defines the tables needed to store resources and their recommendations, as well as tags, and tag types.</comment>
 <comment> Version 2016/01/04: clobs changed to varchar(max) in order to migrate from oracle to SQLServer - Chamath </comment>
 <comment>Update: changed timestamp variable to datetime2(7) - Chamath</comment>
+<comment>Update: added publisher tables - Chamath </comment>
+
 
   <table name="moe_resource">
     <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary key for the table" />
@@ -111,6 +113,43 @@
         <columnref name="resource_id"/>
     </index>
   </table>
+  
+  <table name="moe_publisher">
+    <column name="pk1" data-type="int" nullable="false" identity="true" comment="This is the primary primary key for the table"/>
+    <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who created the resource" />
+    <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="updated_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="name" data-type="varchar(256)" nullable="true" identity="false" comment="" />
+    <column name="is_active" data-type="int" nullable="true" identity="false" comment="Whether or not it's active (0 or null for no, 1 for yes)" />
+    <column name="quick_pic" data-type="varchar(256)" nullable="true" identity="false" comment="See the comments for quick_title. Can be used to hold the image path." />
+
+
+    <primary-key name="moe_publisher_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+</table>
+
+
+  <table name="moe_publisher_tag" comment="Join table for publishers and tags">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="false" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="false" identity="false" comment="The pk1 of the BB user who associated the resource and the tag" />
+    <column name="publisher_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the publisher" />
+    <column name="tag_id" data-type="int" nullable="false" identity="false" comment="The pk1 of the tag" />
+    <column name="parent_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the parent tag, if there is one (can be null). Note that the parent will also have its own moe_publisher_tag row to link it directly to the publisher" />
+
+    <primary-key name="moe_publisher_tag_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_publisher_tag_ui1" unique="false">
+        <columnref name="tag_id"/>
+    </index>
+
+    <index name="moe_publisher_tag_ui2" unique="false">
+        <columnref name="publisher_id"/>
+    </index>
+  </table>
 
   <table name="moe_recommendation_tag" comment="Join table for tags and recommendations. Not currently used">
     <column name="pk1" data-type="int" nullable="false" identity="true" />
@@ -205,6 +244,29 @@
     </index>
     <index name="moe_resource_resource_ui2" unique="false">
         <columnref name="resource_2_id"/>
+    </index>
+  </table>
+
+  <table name="moe_resource_publisher" comment="Table for resource publisher-joins.">
+    <column name="pk1" data-type="int" nullable="false" identity="true" />
+    <column name="created_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="updated_at" data-type="datetime" nullable="true" identity="false" comment="" />
+    <column name="created_by" data-type="int" nullable="true" identity="false" comment="The pk1 of the BB user who associated the resources" />
+    <column name="resource_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the first resource" />
+    <column name="publisher_id" data-type="int" nullable="true" identity="false" comment="The pk1 of the second resource" />
+    <column name="pubdist_type" data-type="int" nullable="true" identity="false" comment="Publisher (0) or Distributer(1)"/>
+    <column name="submitted_by" data-type="int" nullable="true" identity="false" comment="The type of the first resource" />
+
+
+    <primary-key name="moe_resource_publisher_pk1" comment="Unique primary key">
+      <columnref name="pk1" />
+    </primary-key>
+
+    <index name="moe_resource_publisher_ui1" unique="false">
+        <columnref name="resource_id"/>
+    </index>
+    <index name="moe_resource_publisher_ui2" unique="false">
+        <columnref name="publisher_id"/>
     </index>
   </table>
 

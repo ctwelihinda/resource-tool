@@ -145,7 +145,12 @@ public class Tag {
      return parent;
      }
      */
+    public ArrayList<Tag> getPubChildren(int publisher_id) {
+        ArrayList<Tag> rtn = TagLoader.loadPubChildByDBID( publisher_id, this.db_id );
+        Collections.sort( rtn, new TagComparator() );
 
+        return rtn;
+    }
     public ArrayList<Tag> getChildren(int resource_id) {
         ArrayList<Tag> rtn = TagLoader.loadChildrenByDBID( resource_id, this.db_id );
         Collections.sort( rtn, new TagComparator() );
@@ -172,6 +177,25 @@ public class Tag {
         if (user_id != null) {
             int user_pk1 = Integer.parseInt(user_id);
             created_by = (String) Query.select("users", "user_id", user_pk1);
+        } else {
+            created_by = "unknown";
+            user_id = null;
+            
+            constraints = "publisher_id = ? AND tag_id = ?";
+            args = new ArrayList<String>();
+            args.add(Integer.toString(res_id));
+            args.add(Integer.toString(db_id));
+            
+            join_ids = Query.find("moe_publisher_tag", constraints, args);
+            if (!join_ids.isEmpty())
+            {
+                 user_id = (String) Query.select("moe_publisher_tag", "created_by", join_ids.get(0));
+            }
+            
+            if (user_id != null) {
+                int user_pk1 = Integer.parseInt(user_id);
+                created_by = (String) Query.select("users", "user_id", user_pk1);
+            }
         }
             
         return created_by;
@@ -190,6 +214,17 @@ public class Tag {
         if (!join_ids.isEmpty())
         {
              created_at = ((Timestamp) Query.select("moe_resource_tag", "created_at", join_ids.get(0)));
+        } else {
+            constraints = "publisher_id = ? AND tag_id = ?";
+            args = new ArrayList<String>();
+            args.add(Integer.toString(res_id));
+            args.add(Integer.toString(db_id));
+            
+            join_ids = Query.find("moe_publisher_tag", constraints, args);
+            if (!join_ids.isEmpty())
+            {
+                 created_at = ((Timestamp) Query.select("moe_publisher_tag", "created_at", join_ids.get(0)));
+            } 
         }
         
         return created_at;

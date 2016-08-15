@@ -7,17 +7,20 @@ package stans.resourcerecord.servlet.tagging;
 import blackboard.platform.security.authentication.HttpAuthManager;
 import blackboard.platform.session.BbSession;
 import blackboard.platform.session.BbSessionManagerServiceFactory;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.HashMap;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 import stans.EasyUser;
 import stans.db.Query;
 import stans.resourcerecord.dao.*;
@@ -316,13 +319,18 @@ public class EditResource extends HttpServlet {
 
     for (Tag t : this_resource.getRootTags())
     {
+    
         if (tag_option_names.get("people").contains(t.getType()))           { tags.get("people").add(t); }
         else if (t.getType().equals("Medium"))                              { tags.get("medium").add(t); }
         else if (t.getType().equals("Language"))                            { tags.get("language").add(t); }
         else if (t.getType().equals("Genre"))                               { tags.get("genre").add(t); }
         else if (t.getType().equals("STF Link"))                            { tags.get("stf_borrow").add(t); }
         else if (t.getType().equals("Streaming License"))					{ tags.get("licenses").add(t); }
-        else if (t.getType().equals("Tag Group"))                           { tags.get("groups").add(t); }
+        else if (t.getType().equals("Tag Group"))                           { tags.get("groups").add(t);
+        //	for (Tag tag : t.getChildren(this_resource_id)){
+        //		System.out.println(tag.getType() + " " + tag.getValue() + " " + tag.getJoinID() );
+        //	}
+        }
         else if (tag_option_names.get("sendRec").contains(t.getType()))		{ tags.get("sendRec").add(t);}
         else if (t.getType().equals("Status"))								{ tags.get("status").add(t); }
       
